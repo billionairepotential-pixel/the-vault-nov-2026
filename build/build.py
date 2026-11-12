@@ -336,6 +336,7 @@ def build(allow_offline):
     page = open(P("build/template.html"), encoding="utf8").read()
     for key, val in {"COLLECTIONS": js(collections), "DECKLISTS": js({s: decklists[s] for s in slugs}),
                      "YDK": js(dict(sorted(ydk_out.items()))), "NOTES": js(notes), "ANALYSIS": js(page_analysis),
+                     "CHANGES": js(load("content/changes.json") if os.path.exists(P("content/changes.json")) else None),
                      "DATA_GUIDES": open(P("data/guides.json"), encoding="utf8").read().strip().replace("</", "<\\/"),
                      "DATA_CARDS": open(P("data/cards.json"), encoding="utf8").read().strip().replace("</", "<\\/")}.items():
         marker = f"/*@{key}@*/null" if key not in ("DATA_GUIDES", "DATA_CARDS") else f"/*@{key}@*/"

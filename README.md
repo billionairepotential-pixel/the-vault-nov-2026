@@ -30,6 +30,7 @@ If a run fails (a red ✗), the live site is left as it was. The summary says wh
 | Collection report: ratings, verdicts, hand-odds roles, breaker counts | `content/analysis.json` |
 | Deck notes (engine, combo lines, strengths, weaknesses) | `content/notes.json` |
 | Card text in the decklist viewer | `data/cards.json` |
+| "What changed" section on the home page (assessment, per-deck summaries) | `content/changes.json` |
 | Layout, styles and behaviour | `build/template.html` |
 
 Don't edit `index.html` or `content/decklists.json` directly. The build rewrites both from the files above.

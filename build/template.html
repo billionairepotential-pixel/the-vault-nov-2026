@@ -109,6 +109,35 @@
   main{max-width:1180px;margin:0 auto;padding-bottom:96px;}
   section[hidden]{display:none!important;}
 
+  /* ---------- Home: what changed this month ---------- */
+  .changes{margin-top:64px;border-top:1px solid var(--line);padding-top:36px;}
+  .changes[hidden]{display:none;}
+  .changes .eyebrow{font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);}
+  .changes h2{font-size:clamp(1.6rem,3.4vw,2.2rem);margin-top:10px;}
+  .changes .assess{margin-top:14px;max-width:72ch;color:var(--parchment-dim);display:flex;flex-direction:column;gap:12px;line-height:1.7;}
+  .changes .assess a{color:var(--parchment);}
+  .changes .watch{margin-top:14px;max-width:72ch;font-size:0.9rem;color:var(--parchment-dim);border-left:2px solid var(--crimson);padding:4px 0 4px 14px;}
+  .changes .insight .k small{font-size:0.95rem;color:var(--parchment-faint);margin:0 4px;}
+  .changes details.ch-all{margin-top:28px;border:1px solid var(--line);border-radius:4px;background:var(--ink-raised);}
+  .changes details.ch-all > summary{cursor:pointer;padding:16px 18px;font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);list-style:none;}
+  .changes details.ch-all > summary::-webkit-details-marker{display:none;}
+  .changes details.ch-all > summary::before{content:"+ ";}
+  .changes details.ch-all[open] > summary::before{content:"\2212  ";}
+  .ch-col{padding:4px 18px 18px;}
+  .ch-col h3{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--parchment-faint);margin:18px 0 10px;font-weight:400;}
+  .ch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;}
+  .ch-deck{border:1px solid var(--line);border-radius:4px;background:var(--ink-card);padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0;}
+  .ch-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;}
+  .ch-head button{font:inherit;font-family:var(--font-display);font-size:1.05rem;color:var(--parchment);background:none;border:0;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;}
+  .ch-head button:hover{color:var(--gold-bright);text-decoration-color:var(--gold);}
+  .ch-rank{font-family:var(--font-mono);font-size:0.7rem;color:var(--parchment-faint);white-space:nowrap;font-variant-numeric:tabular-nums;}
+  .ch-rank b{font-weight:400;color:var(--gold-bright);}
+  .ch-rank b.dn{color:var(--low);}
+  .ch-deck p{font-size:0.86rem;color:var(--parchment-dim);line-height:1.55;}
+  .ch-swap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 10px;font-size:0.78rem;line-height:1.5;}
+  .ch-swap .lbl{font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;padding-top:2px;}
+  .ch-swap .lbl.in{color:var(--gold);} .ch-swap .lbl.out{color:var(--parchment-faint);}
+  .ch-swap .out + span{color:var(--parchment-faint);}
   /* ---------- Home ---------- */
   .hero{padding:72px 0 48px;}
   .hero-eyebrow{
@@ -771,6 +800,7 @@
       <div class="hero-stats" id="heroStats"></div>
     </div>
     <div class="collection-grid" id="collectionGrid"></div>
+    <div class="changes" id="changesMount" hidden></div>
     <div class="teaser">
       <div>
         <span class="eyebrow">Collection report · November 2026</span>
@@ -939,6 +969,7 @@ function asset(path){
   var NOTES = /*@NOTES@*/null;
   /* Collection report: ratings (build/scores.py), exact hand odds (build/hands.py), text (build/analysis_text.py). */
   var ANALYSIS = /*@ANALYSIS@*/null;
+  var CHANGES = /*@CHANGES@*/null;
   var DECK_INDEX = {};
   var totalDecks = COLLECTIONS.reduce(function(n, c){ return n + c.decks.length; }, 0);
 
@@ -1098,6 +1129,86 @@ function asset(path){
       DECKLISTS[s][z].forEach(function(c){ if (c.n === name) n += c.q; }); }); });
     return n;
   }
+  /* ---------- Home: what changed since the last edition ---------- */
+  (function renderChanges(){
+    var C = CHANGES, mount = document.getElementById("changesMount");
+    if (!C || !mount) return;
+    var A = ANALYSIS, slugs = C.decks.map(function(d){ return d.slug; });
+    function avg(f){ return slugs.reduce(function(n, s){ return n + f(s); }, 0) / slugs.length; }
+    function sum(f){ return slugs.reduce(function(n, s){ return n + f(s); }, 0); }
+    var D = {}; C.decks.forEach(function(d){ D[d.slug] = d; });
+    function nm(s){ return DECK_INDEX[s].deck.name; }
+    function list(a){ return a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1]; }
+
+    var swapped = sum(function(s){ return D[s].in.reduce(function(n, c){ return n + c[1]; }, 0); });
+    var biggest = slugs.slice().sort(function(a, b){
+      var f = function(s){ return D[s].in.reduce(function(n, c){ return n + c[1]; }, 0); }; return f(b) - f(a); }).slice(0, 4);
+    var noB0 = slugs.filter(function(s){ return D[s].oldOdds.B === 0; }), noB1 = slugs.filter(function(s){ return A.decks[s].odds.B === 0; });
+    var B0 = sum(function(s){ return D[s].oldOdds.B; }), B1 = sum(function(s){ return A.decks[s].odds.B; });
+    var br0 = avg(function(s){ return D[s].oldOdds.breaker6; }), br1 = avg(function(s){ return A.decks[s].odds.breaker6; });
+    var bk0 = avg(function(s){ return D[s].oldOdds.brick5; }), bk1 = avg(function(s){ return A.decks[s].odds.brick5; });
+    var id0 = avg(function(s){ return D[s].oldOdds.ideal5; }), id1 = avg(function(s){ return A.decks[s].odds.ideal5; });
+    var ov0 = avg(function(s){ return D[s].oldOverall; }), ov1 = avg(function(s){ return A.decks[s].overall; });
+    var up = slugs.filter(function(s){ return D[s].oldRank - A.decks[s].rank >= 3; })
+      .sort(function(a, b){ return (D[b].oldRank - A.decks[b].rank) - (D[a].oldRank - A.decks[a].rank); });
+    var top5same = A.rank.slice(0, 5).every(function(s){ return D[s].oldRank <= 5; });
+    var down = slugs.filter(function(s){ return A.decks[s].rank - D[s].oldRank >= 2; });
+    var O = C.oldStaples, ogre = "Ghost Ogre & Snow Rabbit", belle = "Ghost Belle & Haunted Mansion";
+    var pots0 = O["Pot of Desires"] + O["Pot of Prosperity"], pots1 = copies("Pot of Desires") + copies("Pot of Prosperity");
+
+    mount.appendChild(text("span", "eyebrow", "What changed · " + C.from + " → " + C.to));
+    mount.appendChild(text("h2", null, "The November update"));
+    var as = el("div", {class: "assess"});
+    C.assessment.forEach(function(p){ as.appendChild(text("p", null, p)); });
+    var pl = el("p", null); pl.appendChild(document.createTextNode("The " + C.from + " edition stays online as it was: "));
+    var a = el("a", {href: C.fromUrl}); a.textContent = "see the October collection"; pl.appendChild(a); pl.appendChild(document.createTextNode("."));
+    as.appendChild(pl); mount.appendChild(as);
+
+    function k(a, b){ var d = el("div", {class: "k"}); d.appendChild(document.createTextNode(a)); d.appendChild(text("small", null, "→")); d.appendChild(document.createTextNode(b)); return d; }
+    var INS = [
+      [text("div", "k", String(swapped)), "Card copies swapped",
+       "Every deck changed. " + list(biggest.map(function(s){ return nm(s) + " (" + D[s].in.reduce(function(n, c){ return n + c[1]; }, 0) + ")"; })) + " changed the most; Radiant Typhoon Angelechy only touched its Extra Deck."],
+      [k(String(O[belle]), String(copies(belle))), "Ghost Belle out, Ghost Ogre in",
+       "The collection's Ghost Belle count fell from " + O[belle] + " to " + copies(belle) + ", while Ghost Ogre went from " + O[ogre] + " to " + copies(ogre) + ", Infinite Impermanence from " + O["Infinite Impermanence"] + " to " + copies("Infinite Impermanence") + " and Nibiru from " + O["Nibiru, the Primal Being"] + " to " + copies("Nibiru, the Primal Being") + ". Ghost Ogre is now the staple to pick up."],
+      [k(String(noB0.length), String(noB1.length)), "Decks with no going-second breaker",
+       (noB0.length ? list(noB0.map(nm)) + " had none in October. " : "") + "Breaker copies across the collection went from " + B0 + " to " + B1 + ", and the average chance to hold one in a 6-card going-second hand from " + br0.toFixed(1) + "% to " + br1.toFixed(1) + "%."],
+      [k(bk0.toFixed(1) + "%", bk1.toFixed(1) + "%"), "Consistency held",
+       "The average brick rate barely moved, and the chance of opening a play plus interaction in 5 cards rose from " + id0.toFixed(1) + "% to " + id1.toFixed(1) + "%. The extra interaction didn't cost the decks their starts."],
+      [k(String(pots0), String(pots1)), "Greedy cards cut",
+       "Pot of Desires and Pot of Prosperity copies dropped from " + pots0 + " to " + pots1 + ", and Card Scanner, Upstart Goblin and One Day of Peace are gone. Their slots went to hand traps and breakers."],
+      [k(ov0.toFixed(2), ov1.toFixed(2)), "Collection average score",
+       (top5same ? "The top five didn't change. " : "") + (up.length ? "Biggest climbers: " + list(up.map(function(s){ return nm(s) + " (#" + D[s].oldRank + " → #" + A.decks[s].rank + ")"; })) + ". " : "") +
+       (down.length ? list(down.map(nm)) + " slipped mostly because other decks passed them." : "")]
+    ];
+    var grid = el("div", {class: "insights"});
+    INS.forEach(function(x){ grid.appendChild(el("div", {class: "insight"}, [x[0], text("h4", null, x[1]), text("p", null, x[2])])); });
+    mount.appendChild(grid);
+    if (C.watch) mount.appendChild(text("p", "watch", C.watch));
+
+    var det = el("details", {class: "ch-all"});
+    det.appendChild(text("summary", null, "Every deck's changes (" + slugs.length + ")"));
+    COLLECTIONS.forEach(function(col){
+      var box = el("div", {class: "ch-col"}); box.appendChild(text("h3", null, col.no + " · " + col.title));
+      var g = el("div", {class: "ch-grid"});
+      col.decks.forEach(function(dk){
+        var d = D[dk.slug]; if (!d) return;
+        var r0 = d.oldRank, r1 = A.decks[dk.slug].rank;
+        var rk = el("span", {class: "ch-rank"}); rk.appendChild(document.createTextNode("#" + r0 + " → "));
+        var b = text("b", r1 > r0 ? "dn" : null, "#" + r1); rk.appendChild(b);
+        rk.appendChild(document.createTextNode("  " + d.oldOverall.toFixed(2) + " → " + A.decks[dk.slug].overall.toFixed(2)));
+        var card = el("div", {class: "ch-deck"}, [el("div", {class: "ch-head"}, [deckBtn(dk.slug), rk]), text("p", null, d.summary)]);
+        var sw = el("div", {class: "ch-swap"});
+        function fmt(a){ return a.map(function(c){ return (c[1] > 1 ? c[1] + "× " : "") + c[0]; }).join(", "); }
+        if (d.in.length){ sw.appendChild(text("span", "lbl in", "In")); sw.appendChild(text("span", null, fmt(d.in))); }
+        if (d.out.length){ sw.appendChild(text("span", "lbl out", "Out")); sw.appendChild(text("span", null, fmt(d.out))); }
+        card.appendChild(sw); g.appendChild(card);
+      });
+      box.appendChild(g); det.appendChild(box);
+    });
+    mount.appendChild(det);
+    mount.hidden = false;
+  })();
+
   (function renderAnalysis(){
     var A = ANALYSIS, mount = document.getElementById("analysisMount");
     document.getElementById("anAsOf").textContent = "Decklists as of 2026-11-11 · format data as of " + A.asOf;

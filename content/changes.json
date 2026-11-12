@@ -1,0 +1,923 @@
+{
+  "from": "October 2026",
+  "to": "November 2026",
+  "fromUrl": "https://billionairepotential-pixel.github.io/the-vault/",
+  "assessment": [
+    "November was an interaction pass, not a rebuild. Every one of the 20 decks changed, but most swaps trade greedy cards (Pot of Desires and Prosperity, Card Scanner, Upstart Goblin) and Ghost Belle for hand traps and board breakers. Only Synchron, Runick, Lunalight and Gren Maju changed how they actually play.",
+    "The result is a collection that is much better at going second without getting any less consistent. The top five didn't move. The gains landed mid-table: Runick Typhoon, Primite Blue-Eyes and Blackwing Angelechy each climbed three places, and White Forest two."
+  ],
+  "watch": "Still the soft spots: Ryu-Ge Mitsurugi and Lunalight have the fewest interaction pieces (9 each), and Dinomorphia, Ryu-Ge and Lunalight are only 15% to see a breaker going second.",
+  "decks": [
+    {
+      "slug": "white-forest",
+      "summary": "The Kashtira package and Chicken Game are out, which leaves Witch of the White Forest as the only Field Spell. Three Mulcharmy Fuwalos, two Forbidden Droplet and a third Diabellstar give it a real going-second plan.",
+      "in": [
+        [
+          "Mulcharmy Fuwalos",
+          2
+        ],
+        [
+          "Forbidden Droplet",
+          2
+        ],
+        [
+          "Diabellstar the Black Witch",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Kashtira Fenrir",
+          2
+        ],
+        [
+          "Pressured Planet Wraitsoth",
+          2
+        ],
+        [
+          "Chicken Game",
+          1
+        ]
+      ],
+      "oldRank": 8,
+      "oldOverall": 7.23,
+      "oldOdds": {
+        "S": 15,
+        "I": 12,
+        "B": 4,
+        "brick5": 3.8,
+        "starter5": 91.9,
+        "ideal5": 81.2,
+        "int6": 90.2,
+        "breaker6": 49.3
+      }
+    },
+    {
+      "slug": "horus-mitsurugi",
+      "summary": "Pot of Prosperity, Terraforming and a Ragged Records make room for Mitsurugi Great Purification, a searchable negate, and two Ghost Ogre. Interaction goes from 11 to 14 pieces.",
+      "in": [
+        [
+          "Ghost Ogre & Snow Rabbit",
+          2
+        ],
+        [
+          "Mitsurugi Great Purification",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Ragged Records of Rites",
+          1
+        ],
+        [
+          "Pot of Prosperity",
+          1
+        ],
+        [
+          "Terraforming",
+          1
+        ]
+      ],
+      "oldRank": 9,
+      "oldOverall": 6.92,
+      "oldOdds": {
+        "S": 16,
+        "I": 11,
+        "B": 4,
+        "brick5": 1.0,
+        "starter5": 93.5,
+        "ideal5": 80.9,
+        "int6": 87.6,
+        "breaker6": 49.3
+      }
+    },
+    {
+      "slug": "kashtira-maliss",
+      "summary": "Kashtiratheosis and Dragon Gate leave together. Ghost Belle and a Veiler become two more Ghost Ogre, and a second Nibiru is added. In the Extra Deck, Link Spider and Dragon Gate become Linguriboh and S:P Little Knight.",
+      "in": [
+        [
+          "Ghost Ogre & Snow Rabbit",
+          2
+        ],
+        [
+          "Nibiru, the Primal Being",
+          1
+        ],
+        [
+          "Linguriboh",
+          1
+        ],
+        [
+          "S:P Little Knight",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Effect Veiler",
+          1
+        ],
+        [
+          "Ghost Belle & Haunted Mansion",
+          1
+        ],
+        [
+          "Kashtiratheosis",
+          1
+        ],
+        [
+          "Link Spider",
+          1
+        ],
+        [
+          "Dragon Gate",
+          1
+        ]
+      ],
+      "oldRank": 3,
+      "oldOverall": 7.7,
+      "oldOdds": {
+        "S": 13,
+        "I": 13,
+        "B": 1,
+        "brick5": 1.7,
+        "starter5": 87.7,
+        "ideal5": 86.0,
+        "int6": 92.3,
+        "breaker6": 15.0
+      }
+    },
+    {
+      "slug": "runick-typhoon",
+      "summary": "The biggest swing in going second: Card Scanner and Fonix (which its own Inspector Boarder restricted) are cut for two Mystical Space Typhoon, two Forbidden Droplet, Harpie's Feather Duster and Lightning Storm.",
+      "in": [
+        [
+          "Mystical Space Typhoon",
+          2
+        ],
+        [
+          "Forbidden Droplet",
+          2
+        ],
+        [
+          "Harpie's Feather Duster",
+          1
+        ],
+        [
+          "Lightning Storm",
+          1
+        ],
+        [
+          "Munin the Runick Wings",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Card Scanner",
+          3
+        ],
+        [
+          "Radiant Typhoon Fonix, the Great Flame",
+          2
+        ],
+        [
+          "One Day of Peace",
+          1
+        ],
+        [
+          "Enigmaster Packbit",
+          1
+        ]
+      ],
+      "oldRank": 15,
+      "oldOverall": 6.6,
+      "oldOdds": {
+        "S": 13,
+        "I": 11,
+        "B": 0,
+        "brick5": 0.0,
+        "starter5": 87.7,
+        "ideal5": 82.0,
+        "int6": 87.6,
+        "breaker6": 0.0
+      }
+    },
+    {
+      "slug": "ryu-ge-mitsurugi",
+      "summary": "Pot of Prosperity, a Mitsurugi Ritual and a Hakva become two Infinite Impermanence and Mitsurugi Great Purification. Still the thinnest interaction in the collection, but less so.",
+      "in": [
+        [
+          "Infinite Impermanence",
+          2
+        ],
+        [
+          "Mitsurugi Great Purification",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Genro Ryu-Ge Hakva",
+          1
+        ],
+        [
+          "Pot of Prosperity",
+          1
+        ],
+        [
+          "Mitsurugi Ritual",
+          1
+        ]
+      ],
+      "oldRank": 18,
+      "oldOverall": 6.31,
+      "oldOdds": {
+        "S": 8,
+        "I": 6,
+        "B": 1,
+        "brick5": 0.7,
+        "starter5": 69.4,
+        "ideal5": 57.0,
+        "int6": 65.0,
+        "breaker6": 15.0
+      }
+    },
+    {
+      "slug": "scareclaw-kashtira",
+      "summary": "Small tune-up at the top: both Ghost Belle become a third Ghost Ogre and a Mulcharmy Fuwalos, and Chengying becomes Kashtira Shangri-Ira, a Rank 7 the Kashtira package makes on its own.",
+      "in": [
+        [
+          "Ghost Ogre & Snow Rabbit",
+          1
+        ],
+        [
+          "Mulcharmy Fuwalos",
+          1
+        ],
+        [
+          "Kashtira Shangri-Ira",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Ghost Belle & Haunted Mansion",
+          2
+        ],
+        [
+          "Swordsoul Supreme Sovereign - Chengying",
+          1
+        ]
+      ],
+      "oldRank": 1,
+      "oldOverall": 7.94,
+      "oldOdds": {
+        "S": 20,
+        "I": 17,
+        "B": 5,
+        "brick5": 2.0,
+        "starter5": 97.6,
+        "ideal5": 92.9,
+        "int6": 97.4,
+        "breaker6": 57.7
+      }
+    },
+    {
+      "slug": "earthbound-resonator",
+      "summary": "Fiend Piece Golem and a Bone Archfiend become Chicken Game and Terraforming, so Earthbound Prisoner Stone Sweeper always has a Field Spell to Summon itself. A Veiler becomes a second Ghost Ogre.",
+      "in": [
+        [
+          "Ghost Ogre & Snow Rabbit",
+          1
+        ],
+        [
+          "Chicken Game",
+          1
+        ],
+        [
+          "Terraforming",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Bone Archfiend",
+          1
+        ],
+        [
+          "Fiend Piece Golem",
+          1
+        ],
+        [
+          "Effect Veiler",
+          1
+        ]
+      ],
+      "oldRank": 10,
+      "oldOverall": 6.8,
+      "oldOdds": {
+        "S": 15,
+        "I": 13,
+        "B": 4,
+        "brick5": 1.5,
+        "starter5": 91.9,
+        "ideal5": 86.2,
+        "int6": 92.3,
+        "breaker6": 49.3
+      }
+    },
+    {
+      "slug": "primite-blue-eyes",
+      "summary": "From zero board breakers to three: two Lightning Storm and Majesty of the White Dragons come in, along with a third Blue-Eyes White Dragon. Primite Roar, a Drillbeam, Veiler and The Ultimate Creature of Destruction go.",
+      "in": [
+        [
+          "Lightning Storm",
+          2
+        ],
+        [
+          "Blue-Eyes White Dragon",
+          1
+        ],
+        [
+          "Majesty of the White Dragons",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Effect Veiler",
+          1
+        ],
+        [
+          "Primite Roar",
+          1
+        ],
+        [
+          "Primite Drillbeam",
+          1
+        ],
+        [
+          "The Ultimate Creature of Destruction",
+          1
+        ]
+      ],
+      "oldRank": 14,
+      "oldOverall": 6.61,
+      "oldOdds": {
+        "S": 15,
+        "I": 12,
+        "B": 0,
+        "brick5": 1.5,
+        "starter5": 91.9,
+        "ideal5": 83.6,
+        "int6": 90.2,
+        "breaker6": 0.0
+      }
+    },
+    {
+      "slug": "swordsoul-tenyi",
+      "summary": "Pot of Desires becomes Pot of Prosperity, a Suruya becomes the third Taia, and an Evenly Matched becomes a second Ghost Ogre. Knightmare Unicorn becomes Qixing Longyuan.",
+      "in": [
+        [
+          "Swordsoul of Taia",
+          1
+        ],
+        [
+          "Ghost Ogre & Snow Rabbit",
+          1
+        ],
+        [
+          "Pot of Prosperity",
+          1
+        ],
+        [
+          "Swordsoul Sinister Sovereign - Qixing Longyuan",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Tenyi Spirit - Suruya",
+          1
+        ],
+        [
+          "Pot of Desires",
+          1
+        ],
+        [
+          "Evenly Matched",
+          1
+        ],
+        [
+          "Knightmare Unicorn",
+          1
+        ]
+      ],
+      "oldRank": 13,
+      "oldOverall": 6.67,
+      "oldOdds": {
+        "S": 6,
+        "I": 17,
+        "B": 5,
+        "brick5": 5.6,
+        "starter5": 57.7,
+        "ideal5": 89.2,
+        "int6": 97.4,
+        "breaker6": 57.7
+      }
+    },
+    {
+      "slug": "tenpai-wyrm",
+      "summary": "Both Pot of Desires become Tenpai Dragon Paidra, so the Tenpai half now opens from one card. One-card starter odds jump from 74% to 85%.",
+      "in": [
+        [
+          "Tenpai Dragon Paidra",
+          2
+        ]
+      ],
+      "out": [
+        [
+          "Pot of Desires",
+          2
+        ]
+      ],
+      "oldRank": 4,
+      "oldOverall": 7.59,
+      "oldOdds": {
+        "S": 9,
+        "I": 14,
+        "B": 2,
+        "brick5": 2.9,
+        "starter5": 74.2,
+        "ideal5": 87.1,
+        "int6": 94.0,
+        "breaker6": 28.1
+      }
+    },
+    {
+      "slug": "synchron",
+      "summary": "The largest rebuild: the whole Adventurer package and Ghost Belle are cut for three Junk Converter, a third Junk Synchron, more hand traps and Nibiru. Starving Venom becomes Satellite Warrior. Renamed Synchron Stardust.",
+      "in": [
+        [
+          "Junk Converter",
+          3
+        ],
+        [
+          "Junk Synchron",
+          1
+        ],
+        [
+          "Ash Blossom & Joyous Spring",
+          1
+        ],
+        [
+          "Effect Veiler",
+          1
+        ],
+        [
+          "Nibiru, the Primal Being",
+          1
+        ],
+        [
+          "Ghost Ogre & Snow Rabbit",
+          1
+        ],
+        [
+          "Satellite Warrior",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Water Enchantress of the Temple",
+          3
+        ],
+        [
+          "Rite of Aramesir",
+          2
+        ],
+        [
+          "Ghost Belle & Haunted Mansion",
+          1
+        ],
+        [
+          "Wandering Gryphon Rider",
+          1
+        ],
+        [
+          "Fateful Adventure",
+          1
+        ],
+        [
+          "Starving Venom Fusion Dragon",
+          1
+        ]
+      ],
+      "oldRank": 19,
+      "oldOverall": 6.04,
+      "oldOdds": {
+        "S": 16,
+        "I": 11,
+        "B": 2,
+        "brick5": 0.7,
+        "starter5": 93.5,
+        "ideal5": 81.2,
+        "int6": 87.6,
+        "breaker6": 28.1
+      }
+    },
+    {
+      "slug": "ignister",
+      "summary": "One Doyon and one Ghost Belle become a second Wizard @Ignister and a third Ignister A.I.Land. Link Spider stays as the answer to an opponent's Nibiru Token.",
+      "in": [
+        [
+          "Wizard @Ignister",
+          1
+        ],
+        [
+          "Ignister A.I.Land",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Ghost Belle & Haunted Mansion",
+          1
+        ],
+        [
+          "Doyon @Ignister",
+          1
+        ]
+      ],
+      "oldRank": 11,
+      "oldOverall": 6.75,
+      "oldOdds": {
+        "S": 17,
+        "I": 14,
+        "B": 3,
+        "brick5": 1.7,
+        "starter5": 94.9,
+        "ideal5": 88.3,
+        "int6": 94.0,
+        "breaker6": 39.4
+      }
+    },
+    {
+      "slug": "branded-dracotail",
+      "summary": "Springans Kitt, an Incredible Ecclesia and a Mulcharmy Purulia make way for two more Ash Blossom (now three) and Branded in High Spirits.",
+      "in": [
+        [
+          "Ash Blossom & Joyous Spring",
+          2
+        ],
+        [
+          "Branded in High Spirits",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Incredible Ecclesia, the Virtuous",
+          1
+        ],
+        [
+          "Springans Kitt",
+          1
+        ],
+        [
+          "Mulcharmy Purulia",
+          1
+        ]
+      ],
+      "oldRank": 2,
+      "oldOverall": 7.87,
+      "oldOdds": {
+        "S": 18,
+        "I": 13,
+        "B": 3,
+        "brick5": 1.2,
+        "starter5": 96.0,
+        "ideal5": 86.6,
+        "int6": 92.3,
+        "breaker6": 39.4
+      }
+    },
+    {
+      "slug": "dinomorphia-ryzeal",
+      "summary": "Two Ghost Belle become the third Dinomorphia Domain and Nibiru, its first going-second board breaker.",
+      "in": [
+        [
+          "Nibiru, the Primal Being",
+          1
+        ],
+        [
+          "Dinomorphia Domain",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Ghost Belle & Haunted Mansion",
+          2
+        ]
+      ],
+      "oldRank": 7,
+      "oldOverall": 7.45,
+      "oldOdds": {
+        "S": 16,
+        "I": 20,
+        "B": 0,
+        "brick5": 2.9,
+        "starter5": 93.5,
+        "ideal5": 94.8,
+        "int6": 99.0,
+        "breaker6": 0.0
+      }
+    },
+    {
+      "slug": "metalmorph-fiendsmith",
+      "summary": "Both Bystials, two Black Metal Dragon and Pot of Prosperity are cut for two more Infinite Impermanence, two Forbidden Droplet and a second Metal Illusionist. Interaction goes from 12 to 16.",
+      "in": [
+        [
+          "Forbidden Droplet",
+          2
+        ],
+        [
+          "Infinite Impermanence",
+          2
+        ],
+        [
+          "Metal Illusionist",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Black Metal Dragon",
+          2
+        ],
+        [
+          "Bystial Druiswurm",
+          1
+        ],
+        [
+          "The Bystial Lubellion",
+          1
+        ],
+        [
+          "Pot of Prosperity",
+          1
+        ]
+      ],
+      "oldRank": 16,
+      "oldOverall": 6.45,
+      "oldOdds": {
+        "S": 13,
+        "I": 12,
+        "B": 4,
+        "brick5": 0.6,
+        "starter5": 87.7,
+        "ideal5": 84.5,
+        "int6": 90.2,
+        "breaker6": 49.3
+      }
+    },
+    {
+      "slug": "blackwing-angelechy",
+      "summary": "Upstart Goblin, a Black Whirlwind and Pot of Prosperity become Nibiru and two Effect Veiler. Favorite HERO Flame Wingman becomes Chaos Angel, which works under both of its Extra Deck locks.",
+      "in": [
+        [
+          "Effect Veiler",
+          2
+        ],
+        [
+          "Nibiru, the Primal Being",
+          1
+        ],
+        [
+          "Chaos Angel",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Pot of Prosperity",
+          1
+        ],
+        [
+          "Upstart Goblin",
+          1
+        ],
+        [
+          "Black Whirlwind",
+          1
+        ],
+        [
+          "Favorite HERO Flame Wingman",
+          1
+        ]
+      ],
+      "oldRank": 12,
+      "oldOverall": 6.73,
+      "oldOdds": {
+        "S": 10,
+        "I": 10,
+        "B": 3,
+        "brick5": 1.5,
+        "starter5": 78.3,
+        "ideal5": 76.9,
+        "int6": 84.5,
+        "breaker6": 39.4
+      }
+    },
+    {
+      "slug": "radiant-typhoon",
+      "summary": "Main Deck unchanged. In the Extra Deck, Scareclaw Tri-Heart becomes Radiant Typhoon Varuroon, the Marine Eidolon, which searches Mystical Space Typhoon.",
+      "in": [
+        [
+          "Radiant Typhoon Varuroon, the Marine Eidolon",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Scareclaw Tri-Heart",
+          1
+        ]
+      ],
+      "oldRank": 6,
+      "oldOverall": 7.47,
+      "oldOdds": {
+        "S": 10,
+        "I": 11,
+        "B": 7,
+        "brick5": 1.0,
+        "starter5": 78.3,
+        "ideal5": 80.9,
+        "int6": 87.6,
+        "breaker6": 71.1
+      }
+    },
+    {
+      "slug": "lunalight",
+      "summary": "Two Foolish Burial Goods and Lunalight Serenade Dance add a new way to start (Goods sends Serenade Dance, which Summons a Lunalight from the Deck). Fuwalos, Ghost Belle, an Ash and some engine copies make room, with a second Heavy Polymerization and two Veiler.",
+      "in": [
+        [
+          "Effect Veiler",
+          2
+        ],
+        [
+          "Foolish Burial Goods",
+          2
+        ],
+        [
+          "Heavy Polymerization",
+          1
+        ],
+        [
+          "Lunalight Serenade Dance",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Mulcharmy Fuwalos",
+          2
+        ],
+        [
+          "Lunalight Yellow Marten",
+          1
+        ],
+        [
+          "Tri-Brigade Fraktall",
+          1
+        ],
+        [
+          "Ash Blossom & Joyous Spring",
+          1
+        ],
+        [
+          "Ghost Belle & Haunted Mansion",
+          1
+        ]
+      ],
+      "oldRank": 20,
+      "oldOverall": 5.94,
+      "oldOdds": {
+        "S": 10,
+        "I": 11,
+        "B": 1,
+        "brick5": 1.0,
+        "starter5": 78.3,
+        "ideal5": 80.9,
+        "int6": 87.6,
+        "breaker6": 15.0
+      }
+    },
+    {
+      "slug": "spright",
+      "summary": "Dogmatika Maximus and Punishment are cut for a second Spright Red and Spright Smashers, so the Dogmatika half is now just Ecclesia, Nadir Servant and Fleurdelis.",
+      "in": [
+        [
+          "Spright Red",
+          1
+        ],
+        [
+          "Spright Smashers",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Dogmatika Maximus",
+          1
+        ],
+        [
+          "Dogmatika Punishment",
+          1
+        ]
+      ],
+      "oldRank": 5,
+      "oldOverall": 7.56,
+      "oldOdds": {
+        "S": 14,
+        "I": 20,
+        "B": 11,
+        "brick5": 7.6,
+        "starter5": 90.0,
+        "ideal5": 90.0,
+        "int6": 99.0,
+        "breaker6": 87.6
+      }
+    },
+    {
+      "slug": "gren-maju",
+      "summary": "The monster hand traps its own Inspector Boarder switched off are gone. In come Dimensional Fissure ×2, Solemn Strike, a second Evenly Matched and two more Infinite Impermanence, all of which work under Boarder.",
+      "in": [
+        [
+          "Dimensional Fissure",
+          2
+        ],
+        [
+          "Infinite Impermanence",
+          2
+        ],
+        [
+          "Evenly Matched",
+          1
+        ],
+        [
+          "Solemn Strike",
+          1
+        ]
+      ],
+      "out": [
+        [
+          "Effect Veiler",
+          2
+        ],
+        [
+          "Ghost Ogre & Snow Rabbit",
+          1
+        ],
+        [
+          "Droll & Lock Bird",
+          1
+        ],
+        [
+          "Ash Blossom & Joyous Spring",
+          1
+        ],
+        [
+          "Clockwork Night",
+          1
+        ]
+      ],
+      "oldRank": 17,
+      "oldOverall": 6.44,
+      "oldOdds": {
+        "S": 16,
+        "I": 13,
+        "B": 6,
+        "brick5": 1.4,
+        "starter5": 93.5,
+        "ideal5": 86.3,
+        "int6": 92.3,
+        "breaker6": 65.0
+      }
+    }
+  ],
+  "oldStaples": {
+    "Ghost Belle & Haunted Mansion": 10,
+    "Ghost Ogre & Snow Rabbit": 11,
+    "Forbidden Droplet": 4,
+    "Nibiru, the Primal Being": 18,
+    "Infinite Impermanence": 39,
+    "Pot of Desires": 7,
+    "Pot of Prosperity": 7,
+    "Lightning Storm": 1,
+    "Ash Blossom & Joyous Spring": 52
+  }
+}
