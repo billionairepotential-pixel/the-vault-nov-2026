@@ -715,6 +715,27 @@
   .sw h4{font-family:var(--font-display);font-size:max(1rem,2.6cqw);margin:0 0 1.2cqw;color:var(--hue);}
   .sw ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:1.2cqw;}
   .sw li::marker{color:var(--hue);}
+  .plan3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.8cqw;}
+  .plan3 .s-panel{padding:2cqw 2.2cqw;}
+  .plan3 .s-sub, .tool .s-sub{color:var(--hue);margin-bottom:0.9cqw;}
+  .keys{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.7cqw 2.6cqw;}
+  .keys.one{grid-template-columns:minmax(0,1fr);}
+  .key{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.5cqw;align-items:start;min-width:0;}
+  .key b{display:block;font-family:var(--font-body);font-weight:700;font-size:max(0.76rem,1.72cqw);line-height:1.25;color:var(--gold-bright);margin-bottom:0.4cqw;}
+  .key b i{font-style:normal;font-family:var(--font-mono);font-weight:500;font-size:0.82em;color:var(--parchment-faint);margin-left:0.5em;}
+  .key p{margin:0;}
+  .s-text.xs{font-size:max(0.72rem, 1.52cqw);line-height:1.42;color:var(--parchment);}
+  .stops{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:0.8cqw;}
+  .stops li::marker{color:var(--hue);}
+  .tools{display:flex;flex-direction:column;}
+  .tool{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2cqw;align-items:center;padding:1.3cqw 0;border-bottom:1px dashed color-mix(in oklab, var(--hue) 30%, var(--line));}
+  .tool:first-child{padding-top:0;} .tool:last-child{border-bottom:0;padding-bottom:0;}
+  .tool .s-sub{margin-bottom:0.5cqw;letter-spacing:0.1em;}
+  .node .tag{font-family:var(--font-mono);font-size:max(0.52rem,1.08cqw);letter-spacing:0.13em;text-transform:uppercase;color:var(--hue);line-height:1;margin-bottom:-0.4cqw;}
+  .node .tag.opp{color:#0e0c0a;background:var(--hue);padding:0.35cqw 0.9cqw;border-radius:999px;font-weight:600;}
+  .node .cap strong{color:var(--gold-bright);font-weight:700;}
+  .eng .role{color:var(--parchment-dim);}
+  @media (max-width:640px){.plan3,.keys{grid-template-columns:minmax(0,1fr);}}
   .final{display:flex;flex-direction:column;gap:2cqw;align-items:center;flex:1;min-height:0;}
   .final img{max-height:58cqw;width:auto;border-radius:6px;border:1px solid var(--line);}
   .final .acts{display:flex;gap:1.4cqw;flex-wrap:wrap;justify-content:center;}
@@ -1452,8 +1473,8 @@ function asset(path){
   })();
 
   /* ---------- Visual guides ----------
-     Slides are built from data/guides.json (content from each reference guide, plus where every
-     card sits inside that deck's image, so card pictures are shown straight from art/<slug>.png). */
+     Slides are built from data/guides.json: for each deck a pitch, game plan, engines (with key cards),
+     combo lines, rulings, strengths and weaknesses, plus where every card's picture sits in its sprite sheet. */
   var GD = null, gdPromise = null;
   var gEl = document.getElementById("guide"), gStage = document.getElementById("guideStage");
   var gSlides = [], gIdx = 0, gSlug = null, gReturnFocus = null;
@@ -1515,7 +1536,7 @@ function asset(path){
       var cov = el("div", {class: "cover"});
       var cc = el("div", {class: "cover-card"}); var c = gcard(slug, key(), W * 0.33); if (c) cc.appendChild(c);
       var right = el("div", {class: "s-panel"});
-      right.appendChild(el("p", {class: "s-text", html: md(g.arch)}));
+      right.appendChild(el("p", {class: "s-text", html: md(g.pitch || g.arch)}));
       var ch = el("div", {class: "chips"}); ch.style.marginTop = "2.2cqw";
       g.engines.forEach(function(e){ ch.appendChild(text("span", null, e.h)); });
       right.appendChild(ch);
@@ -1538,16 +1559,74 @@ function asset(path){
       }
       cov.appendChild(cc); cov.appendChild(col2); b.appendChild(cov);
     }});
-    balancedChunk(g.engines, 2).forEach(function(grp, i, all){
-      S.push({k: "How the deck works" + (all.length > 1 ? " · " + (i + 1) + "/" + all.length : ""), t: grp.map(function(e){ return e.h; }).join(" & "), f: function(b, W){
-        grp.forEach(function(e){
-          var box = el("div", {class: "s-panel eng"});
-          box.appendChild(text("h4", null, e.h));
-          var cs = el("div", {class: "eng-cards"});
-          e.cards.slice(0, 9).forEach(function(n){ var c = gcard(slug, n, W * (grp.length > 1 ? 0.078 : 0.1)); if (c) cs.appendChild(c); });
-          if (cs.children.length) box.appendChild(cs);
-          box.appendChild(el("p", {class: "s-text", html: md(e.t)}));
-          b.appendChild(box);
+    function keyRow(o, w, cls){
+      var row = el("div", {class: "key"});
+      var c = gcard(slug, o.c, w); row.appendChild(c || el("span"));
+      var tx = el("div"), nm = el("b"); nm.textContent = o.c;
+      if (o.n){ var cnt = el("i"); cnt.textContent = "×" + o.n; nm.appendChild(cnt); }
+      tx.appendChild(nm); tx.appendChild(el("p", {class: "s-text " + (cls || "xs"), html: md(o.t)}));
+      row.appendChild(tx); return row;
+    }
+    /* Lay a slide out at the largest of a few sizes that fits its square (sizes run largest first). */
+    function fit(b, sizes, draw){
+      for (var i = 0; i < sizes.length; i++){
+        b.innerHTML = ""; draw(sizes[i]);
+        if (b.scrollHeight <= b.clientHeight + 1) return;
+      }
+    }
+    /* Game plan: the plan itself on one slide, the cards to open on the next, so neither has to shrink its type. */
+    if (g.plan){
+      S.push({k: "Game plan", t: "What this deck is trying to do", f: function(b, W){
+        fit(b, [[""], ["sm"], ["xs"]], function(z){
+          var tri = el("div", {class: "plan3"});
+          [["Going first", g.plan.first], ["Going second", g.plan.second], ["How you win", g.plan.win]].forEach(function(x){
+            var p = el("div", {class: "s-panel"}); p.appendChild(text("p", "s-sub", x[0]));
+            p.appendChild(el("p", {class: "s-text " + z[0], html: md(x[1])})); tri.appendChild(p);
+          });
+          b.appendChild(tri);
+          if (g.plan.stops && g.plan.stops.length){
+            var sp = el("div", {class: "s-panel"}); sp.appendChild(text("p", "s-sub", "What stops you, and what to do about it"));
+            var ul = el("ul", {class: "stops"}); g.plan.stops.forEach(function(t){ ul.appendChild(el("li", {class: "s-text " + z[0], html: md(t)})); });
+            sp.appendChild(ul); b.appendChild(sp);
+          }
+        });
+      }});
+      S.push({k: "Game plan · Opening hand", t: "Cards you want to open", toc: false, f: function(b, W){
+        var many = g.plan.open.length > 3;
+        fit(b, many ? [["", 0.125], ["sm", 0.125], ["sm", 0.11], ["sm", 0.095], ["xs", 0.085], ["xs", 0.07]] : [["", 0.15], ["", 0.13], ["sm", 0.115], ["sm", 0.1]], function(z){
+          var op = el("div", {class: "s-panel"}), kg = el("div", {class: "keys" + (many ? "" : " one")});
+          g.plan.open.forEach(function(o){ kg.appendChild(keyRow(o, W * z[1], z[0])); });
+          op.appendChild(kg); b.appendChild(op);
+        });
+      }});
+    }
+    /* Engines: one with a "key" list gets its own slide (each key card pictured with what it does);
+       the rest (hand traps, Extra Deck toolbox) share slides two at a time as a card strip plus a sentence. */
+    var engSlides = [], plainEng = [];
+    g.engines.forEach(function(e){ if (e.key) engSlides.push([e]); else plainEng.push(e); });
+    balancedChunk(plainEng, 2).forEach(function(grp){ engSlides.push(grp); });
+    engSlides.forEach(function(grp, i, all){
+      S.push({k: "How the deck works" + (all.length > 1 ? " · " + (i + 1) + "/" + all.length : ""), t: grp.length > 1 ? "Support cards" : grp[0].h, f: function(b, W){
+        if (grp[0].key){
+          var e = grp[0], one = e.key.length <= 3;
+          fit(b, [["sm", 0.1], ["sm", 0.088], ["sm", 0.076], ["xs", 0.068], ["xs", 0.058]], function(z){
+            b.appendChild(el("div", {class: "s-panel eng"}, [el("p", {class: "s-text " + z[0] + " role", html: md(e.t)})]));
+            var kp = el("div", {class: "s-panel"}), kg = el("div", {class: "keys" + (one ? " one" : "")});
+            e.key.forEach(function(o){ kg.appendChild(keyRow(o, W * z[1], z[0])); });
+            kp.appendChild(kg); b.appendChild(kp);
+          });
+          return;
+        }
+        fit(b, [["", 0.086], ["sm", 0.078], ["sm", 0.068], ["xs", 0.06]], function(z){
+          grp.forEach(function(e){
+            var box = el("div", {class: "s-panel eng"});
+            box.appendChild(text("h4", null, e.h));
+            var cs = el("div", {class: "eng-cards"});
+            e.cards.slice(0, 10).forEach(function(n){ var c = gcard(slug, n, W * (grp.length > 1 ? z[1] : z[1] * 1.2)); if (c) cs.appendChild(c); });
+            if (cs.children.length) box.appendChild(cs);
+            if (e.t) box.appendChild(el("p", {class: "s-text " + z[0], html: md(e.t)}));
+            b.appendChild(box);
+          });
         });
       }});
     });
@@ -1557,14 +1636,53 @@ function asset(path){
       names.forEach(function(n){ var c = gcard(slug, n, w); if (c) st.appendChild(c); });
       return st;
     }
+    function stepTag(st){
+      if (st.k) return st.k;
+      var t = st.t;
+      if (/^(Opponent's|Their|On their)\b/i.test(t)) return "Their turn";
+      if (/^Battle\b|^Attack\b|^Battle Phase/i.test(t)) return "Battle";
+      var m = /\b(Synchro|Xyz|Link|Fusion|Ritual|Normal|Special|Tribute) Summon/.exec(t), a = /\badds?\b/.exec(t), se = /\bSets?\b/.exec(t);
+      var first = Math.min(m ? m.index : 1e9, a ? a.index : 1e9, se ? se.index : 1e9);
+      if (first === 1e9) return /^Activate/.test(t) ? "Activate" : "Effect";
+      if (m && m.index === first) return m[1] === "Normal" ? "Normal Summon" : m[1] === "Special" ? "Special Summon" : m[1] === "Tribute" ? "Tribute Summon" : m[1] + " Summon";
+      if (a && a.index === first) return "Search";
+      return "Set";
+    }
     (g.combos || []).forEach(function(l){
       var parts = l.h.split(" — "), lab = parts.length > 1 ? parts[0] : "Combo", ttl = parts.length > 1 ? parts.slice(1).join(" — ") : l.h;
+      if (l.kind === "toolbox"){
+        /* up to 3 situations per slide; the explanation leads the first slide and the rules close the last */
+        var tgroups = l.rows.length <= 3 ? [l.rows] : balancedChunk(l.rows, 3);
+        tgroups.forEach(function(rows, ti){
+          S.push({k: "Toolbox · " + lab + (tgroups.length > 1 ? " · " + (ti + 1) + "/" + tgroups.length : ""), t: ttl, toc: ti === 0 ? undefined : false, f: function(b, W){
+            fit(b, [["", 0.12], ["sm", 0.105], ["sm", 0.09], ["xs", 0.076], ["xs", 0.064], ["xs", 0.054]], function(z){
+              if (ti === 0) b.appendChild(el("div", {class: "s-panel"}, [el("p", {class: "s-text " + z[0], html: md(l.about)})]));
+              var tp = el("div", {class: "s-panel"}), tl = el("div", {class: "tools"});
+              rows.forEach(function(r){
+                var row = el("div", {class: "tool"});
+                row.appendChild(cstrip(r.cards, W * z[1]));
+                var tx = el("div"); tx.appendChild(text("p", "s-sub", r.when));
+                tx.appendChild(el("p", {class: "s-text " + z[0], html: md(r.t)})); row.appendChild(tx); tl.appendChild(row);
+              });
+              tp.appendChild(tl); b.appendChild(tp);
+              if (ti === tgroups.length - 1 && l.rules && l.rules.length){
+                var rp = el("div", {class: "s-panel"}); rp.appendChild(text("p", "s-sub", "Key rules"));
+                var ul = el("ul", {class: "stops"}); l.rules.forEach(function(r){ ul.appendChild(el("li", {class: "s-text " + z[0], html: md(r)})); });
+                rp.appendChild(ul); b.appendChild(rp);
+              }
+            });
+          }});
+        });
+        return;
+      }
       S.push({k: "Combo · " + lab, t: ttl, note: COMBO_NOTE, f: function(b, W){
-        var narrow = W < 560, cw = W * (narrow ? 0.15 : 0.08);
+        var narrow = W < 560;
+        fit(b, [["sm", 0.08], ["sm", 0.07], ["xs", 0.066], ["xs", 0.058]], function(z){
+        var cw = W * (narrow ? 0.15 : z[1]);
         var grid = el("div", {class: "cov2"});
         var L = el("div", {class: "col"}), R = el("div", {class: "col"});
         var ab = el("div", {class: "s-panel"}); ab.appendChild(text("p", "s-sub", "What this combo is about"));
-        ab.appendChild(el("p", {class: "s-text sm", html: md(l.about)})); L.appendChild(ab);
+        ab.appendChild(el("p", {class: "s-text " + z[0], html: md(l.about)})); L.appendChild(ab);
         var hp = el("div", {class: "s-panel"}); hp.appendChild(text("p", "s-sub", "Starting hand"));
         hp.appendChild(cstrip(l.hand, cw));
         var ns = el("div", {class: "chips"}); ns.style.marginTop = "1.4cqw";
@@ -1572,11 +1690,12 @@ function asset(path){
         hp.appendChild(ns); L.appendChild(hp);
         var ep = el("div", {class: "s-panel"}); ep.appendChild(text("p", "s-sub", "End board"));
         ep.appendChild(cstrip(l.end.cards.slice(0, 5), cw));
-        var et = el("p", {class: "s-text sm", html: md(l.end.t)}); et.style.marginTop = "1.4cqw"; ep.appendChild(et); R.appendChild(ep);
+        var et = el("p", {class: "s-text " + z[0], html: md(l.end.t)}); et.style.marginTop = "1.4cqw"; ep.appendChild(et); R.appendChild(ep);
         var rp = el("div", {class: "s-panel"}); rp.appendChild(text("p", "s-sub", "Key rules"));
-        var ul = el("ul", {class: "rules"}); l.rules.forEach(function(r){ ul.appendChild(el("li", {class: "s-text sm", html: md(r)})); });
+        var ul = el("ul", {class: "rules"}); l.rules.forEach(function(r){ ul.appendChild(el("li", {class: "s-text " + z[0], html: md(r)})); });
         rp.appendChild(ul); R.appendChild(rp);
         grid.appendChild(L); grid.appendChild(R); b.appendChild(grid);
+        });
       }});
       var groups = chunk(l.steps, 6);
       groups.forEach(function(grp, gi){
@@ -1602,6 +1721,7 @@ function asset(path){
               stack.appendChild(c);
             });
             node.appendChild(stack);
+            var tg = stepTag(st); node.appendChild(text("span", "tag" + (tg === "Their turn" ? " opp" : ""), tg));
             node.appendChild(el("div", {class: "cap", html: md(st.t)}));
             flow.appendChild(node);
           });
