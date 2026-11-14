@@ -19,10 +19,10 @@
     "radiant-typhoon",
     "dinomorphia-ryzeal",
     "blackwing-angelechy",
-    "horus-mitsurugi",
     "primite-blue-eyes",
-    "runick-typhoon",
+    "horus-mitsurugi",
     "earthbound-resonator",
+    "runick-typhoon",
     "ignister",
     "swordsoul-tenyi",
     "gren-maju",
@@ -348,7 +348,7 @@
       "tier": "B+",
       "verdict": "Three independent engines (Radiant Typhoon, Angelechy and Albaz Fusion), and the most going-second breakers of the Angelechy pair.",
       "edge": "Angelechy won YCS Orlando on November 7 and took 10 of its 32 top-cut spots, and a Radiant Typhoon deck made that top 8.",
-      "risk": "No Traps, only 10 one-card starters (78.3%), and Meghala's WIND-only lock blocks every Angelechy and Fusion play that turn.",
+      "risk": "No Traps, only 11 one-card starters (82.0%), and Meghala's WIND-only lock blocks every Angelechy and Fusion play that turn.",
       "nat": [
         "Day 2 contender",
         "It shares the format's best engine and has 7 breakers going second. A purer Angelechy list would still be favored over this hybrid."
@@ -522,7 +522,7 @@
       "meta": 5.5,
       "diff": 7,
       "overall": 6.91,
-      "rank": 10,
+      "rank": 11,
       "tier": "B",
       "verdict": "A grinding deck: GY recursion plus Ritual board wipes, now with a searchable Mitsurugi negate and two Ghost Ogre.",
       "edge": "Horus recursion is hard to remove for good, and interaction goes from 11 to 14 pieces (94.0% to see one in 6 cards).",
@@ -575,17 +575,17 @@
       "ceil": 8.5,
       "floor": 6.0,
       "g1": 7.5,
-      "g2": 6.5,
+      "g2": 7.0,
       "res": 7.0,
       "int": 7.5,
       "meta": 4.5,
       "diff": 8,
-      "overall": 6.8,
-      "rank": 13,
+      "overall": 6.87,
+      "rank": 12,
       "tier": "B",
       "verdict": "A Red Dragon Archfiend Synchro grind deck with a separate Horus engine as insurance.",
-      "edge": "Ceiling 8.5, and the Horus half builds a board even if the Resonator chain is stopped.",
-      "risk": "Resonator effects lock you to DARK Dragon Synchros, and GY hate shuts off most of both engines.",
+      "edge": "Ceiling 8.5, and the Horus half builds a board even if the Resonator chain is stopped. Two Red Dragon Archfiend's Chains add a searchable multi-monster negate for going second.",
+      "risk": "Resonator effects lock you to DARK Dragon Synchros (Super Polymerization's Fusions and the generic Extra Deck are off on those turns), and GY hate shuts off most of both engines.",
       "nat": [
         "Unlikely to top cut",
         "Neither Resonator nor RDA is a current national-level deck, and Necrovalley-style hate is common at that level."
@@ -625,9 +625,10 @@
           "Effect Veiler",
           "Ghost Ogre & Snow Rabbit",
           "Super Polymerization",
-          "Infinite Impermanence"
+          "Infinite Impermanence",
+          "Red Dragon Archfiend's Chains"
         ],
-        "breakerCount": 4
+        "breakerCount": 5
       }
     },
     "ignister": {
@@ -806,7 +807,7 @@
       }
     },
     "primite-blue-eyes": {
-      "cons": 7.5,
+      "cons": 8.0,
       "ceil": 8.0,
       "floor": 6.0,
       "g1": 8.0,
@@ -815,11 +816,11 @@
       "int": 7.0,
       "meta": 4.5,
       "diff": 6,
-      "overall": 6.86,
-      "rank": 11,
+      "overall": 6.95,
+      "rank": 10,
       "tier": "B",
       "verdict": "A classic Blue-Eyes control deck with two engines that reach the same double-negate board.",
-      "edge": "Strong going first (Spirit Dragon, Ultimate Spirit Dragon, Stardust Sifr) with 15 starters.",
+      "edge": "Strong going first (Spirit Dragon, Ultimate Spirit Dragon, Stardust Sifr) with 17 starters, including three Blue Abyss.",
       "risk": "Only two true board breakers (Lightning Storm ×2, 28.1% to see one in 6 cards). Behind a strong board it relies on them, Tyrant Dragon and Drillbeam.",
       "nat": [
         "Unlikely to top cut",
@@ -839,7 +840,8 @@
           "Wishes for Eyes of Blue",
           "Bingo Machine, Go!!!",
           "Primite Dragon Ether Beryl",
-          "Primite Lordly Lode"
+          "Primite Lordly Lode",
+          "Deep-Eyes White Dragon, the Blue Abyss"
         ],
         "pieces": [
           "Blue-Eyes White Dragon",
@@ -847,7 +849,6 @@
           "Neo Kaiser Sea Horse",
           "Mausoleum of White",
           "Roar of the Blue-Eyed Dragons",
-          "Synchro Rumble",
           "True Light"
         ],
         "interaction": [
@@ -873,7 +874,7 @@
       "meta": 5.0,
       "diff": 8,
       "overall": 6.83,
-      "rank": 12,
+      "rank": 13,
       "tier": "B",
       "verdict": "A floodgate control deck that wins by milling. It never bricks, and it now carries real board breakers.",
       "edge": "0% brick rate, and Inspector Boarder plus Dimensional Fissure lock out decks that use the Extra Deck or GY heavily.",
@@ -1228,5 +1229,5 @@
       }
     }
   },
-  "asOf": "2026-11-11"
+  "asOf": "2026-11-14"
 }

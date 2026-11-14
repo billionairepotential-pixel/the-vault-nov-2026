@@ -4,7 +4,7 @@
   "fromUrl": "https://billionairepotential-pixel.github.io/the-vault/",
   "assessment": [
     "November was an interaction pass, not a rebuild. Every one of the 20 decks changed, but most swaps trade greedy cards (Pot of Desires and Prosperity, Card Scanner, Upstart Goblin) and Ghost Belle for hand traps and board breakers. Only Synchron, Runick, Lunalight and Gren Maju changed how they actually play.",
-    "The result is a collection that is much better at going second without getting any less consistent. The top five didn't move. The gains landed mid-table: Runick Typhoon, Primite Blue-Eyes and Blackwing Angelechy each climbed three places, and White Forest two."
+    "The result is a collection that is much better at going second without getting any less consistent. The top five didn't move. The gains landed mid-table: Primite Blue-Eyes climbed four places, Blackwing Angelechy three, and Runick Typhoon and White Forest two."
   ],
   "watch": "Still the soft spots: Ryu-Ge Mitsurugi and Lunalight have the fewest interaction pieces (9 each), and Dinomorphia, Ryu-Ge and Lunalight are only 15% to see a breaker going second.",
   "decks": [
@@ -286,8 +286,12 @@
     },
     {
       "slug": "earthbound-resonator",
-      "summary": "Fiend Piece Golem and a Bone Archfiend become Chicken Game and Terraforming, so Earthbound Prisoner Stone Sweeper always has a Field Spell to Summon itself. A Veiler becomes a second Ghost Ogre.",
+      "summary": "Fiend Piece Golem and a Bone Archfiend become Chicken Game and Terraforming, so Earthbound Prisoner Stone Sweeper always has a Field Spell. Two Red Dragon Archfiend's Chains, a searchable negate for going second, replace a Stone Sweeper and a Super Polymerization, and Red Nova Dragon - Burning Soul and Crimson Dragon Quetzalcoatl replace the two Extra Deck cards the Resonator locks never allowed.",
       "in": [
+        [
+          "Red Dragon Archfiend's Chains",
+          2
+        ],
         [
           "Ghost Ogre & Snow Rabbit",
           1
@@ -299,6 +303,14 @@
         [
           "Terraforming",
           1
+        ],
+        [
+          "Red Nova Dragon - Burning Soul",
+          1
+        ],
+        [
+          "Crimson Dragon Quetzalcoatl",
+          1
         ]
       ],
       "out": [
@@ -307,11 +319,27 @@
           1
         ],
         [
+          "Earthbound Prisoner Stone Sweeper",
+          1
+        ],
+        [
           "Fiend Piece Golem",
           1
         ],
         [
           "Effect Veiler",
+          1
+        ],
+        [
+          "Super Polymerization",
+          1
+        ],
+        [
+          "Favorite HERO Flame Wingman",
+          1
+        ],
+        [
+          "Swordsoul Supreme Sovereign - Chengying",
           1
         ]
       ],
@@ -330,8 +358,12 @@
     },
     {
       "slug": "primite-blue-eyes",
-      "summary": "From zero board breakers to three: two Lightning Storm and Majesty of the White Dragons come in, along with a third Blue-Eyes White Dragon. Primite Roar, a Drillbeam, Veiler and The Ultimate Creature of Destruction go.",
+      "summary": "From zero board breakers to three: two Lightning Storm and Majesty of the White Dragons come in, with a third Blue-Eyes White Dragon. Three Deep-Eyes White Dragon, the Blue Abyss add a one-card start that returns as a 3000 ATK body. Synchro Rumble, Primite Roar, a Drillbeam, Bingo Machine and Sea Horse go, and Crimson Dragon Quetzalcoatl takes a Spirit Dragon's Extra Deck slot.",
       "in": [
+        [
+          "Deep-Eyes White Dragon, the Blue Abyss",
+          3
+        ],
         [
           "Lightning Storm",
           2
@@ -343,11 +375,23 @@
         [
           "Majesty of the White Dragons",
           1
+        ],
+        [
+          "Crimson Dragon Quetzalcoatl",
+          1
         ]
       ],
       "out": [
         [
           "Effect Veiler",
+          1
+        ],
+        [
+          "Neo Kaiser Sea Horse",
+          1
+        ],
+        [
+          "Bingo Machine, Go!!!",
           1
         ],
         [
@@ -359,7 +403,15 @@
           1
         ],
         [
+          "Synchro Rumble",
+          1
+        ],
+        [
           "The Ultimate Creature of Destruction",
+          1
+        ],
+        [
+          "Blue-Eyes Spirit Dragon",
           1
         ]
       ],
@@ -734,14 +786,22 @@
     },
     {
       "slug": "radiant-typhoon",
-      "summary": "Main Deck unchanged. In the Extra Deck, Scareclaw Tri-Heart becomes Radiant Typhoon Varuroon, the Marine Eidolon, which searches Mystical Space Typhoon.",
+      "summary": "A third Radiant Typhoon Swen replaces the second Manifestation, so the deck has 11 one-card starters instead of 10. In the Extra Deck, Scareclaw Tri-Heart becomes Radiant Typhoon Varuroon, the Marine Eidolon, which searches Mystical Space Typhoon.",
       "in": [
+        [
+          "Radiant Typhoon Swen",
+          1
+        ],
         [
           "Radiant Typhoon Varuroon, the Marine Eidolon",
           1
         ]
       ],
       "out": [
+        [
+          "Radiant Typhoon Manifestation",
+          1
+        ],
         [
           "Scareclaw Tri-Heart",
           1

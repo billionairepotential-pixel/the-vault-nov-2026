@@ -50,5 +50,21 @@
   "40605147": {
     "name": "Solemn Strike",
     "type": "Counter Trap"
+  },
+  "92936364": {
+    "name": "Red Dragon Archfiend's Chains",
+    "type": "Continuous Trap"
+  },
+  "65541655": {
+    "name": "Red Nova Dragon - Burning Soul",
+    "type": "Synchro"
+  },
+  "29053656": {
+    "name": "Crimson Dragon Quetzalcoatl",
+    "type": "Synchro"
+  },
+  "67886895": {
+    "name": "Deep-Eyes White Dragon, the Blue Abyss",
+    "type": "Effect"
   }
 }

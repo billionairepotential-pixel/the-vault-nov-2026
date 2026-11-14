@@ -1181,7 +1181,7 @@
     "t": "Effect"
    },
    {
-    "q": 3,
+    "q": 2,
     "n": "Earthbound Prisoner Stone Sweeper",
     "t": "Effect"
    },
@@ -1233,7 +1233,7 @@
     "t": "Normal Spell"
    },
    {
-    "q": 3,
+    "q": 2,
     "n": "Super Polymerization",
     "t": "Quick-Play Spell"
    },
@@ -1253,6 +1253,11 @@
     "q": 2,
     "n": "Infinite Impermanence",
     "t": "Normal Trap"
+   },
+   {
+    "q": 2,
+    "n": "Red Dragon Archfiend's Chains",
+    "t": "Continuous Trap"
    }
   ],
   "extra": [
@@ -1318,12 +1323,12 @@
    },
    {
     "q": 1,
-    "n": "Favorite HERO Flame Wingman",
-    "t": "Fusion"
+    "n": "Red Nova Dragon - Burning Soul",
+    "t": "Synchro"
    },
    {
     "q": 1,
-    "n": "Swordsoul Supreme Sovereign - Chengying",
+    "n": "Crimson Dragon Quetzalcoatl",
     "t": "Synchro"
    }
   ]
@@ -1366,9 +1371,14 @@
     "t": "Effect"
    },
    {
-    "q": 2,
+    "q": 1,
     "n": "Neo Kaiser Sea Horse",
     "t": "Tuner"
+   },
+   {
+    "q": 3,
+    "n": "Deep-Eyes White Dragon, the Blue Abyss",
+    "t": "Effect"
    }
   ],
   "spells": [
@@ -1393,7 +1403,7 @@
     "t": "Field Spell"
    },
    {
-    "q": 3,
+    "q": 2,
     "n": "Bingo Machine, Go!!!",
     "t": "Normal Spell"
    },
@@ -1401,11 +1411,6 @@
     "q": 2,
     "n": "Primite Drillbeam",
     "t": "Quick-Play Spell"
-   },
-   {
-    "q": 1,
-    "n": "Synchro Rumble",
-    "t": "Normal Spell"
    },
    {
     "q": 2,
@@ -1432,7 +1437,7 @@
   ],
   "extra": [
    {
-    "q": 3,
+    "q": 2,
     "n": "Blue-Eyes Spirit Dragon",
     "t": "Synchro"
    },
@@ -1490,6 +1495,11 @@
     "q": 1,
     "n": "Super Starslayer TY-PHON - Sky Crisis",
     "t": "Xyz"
+   },
+   {
+    "q": 1,
+    "n": "Crimson Dragon Quetzalcoatl",
+    "t": "Synchro"
    }
   ]
  },
@@ -2991,7 +3001,7 @@
     "t": "Effect"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Radiant Typhoon Swen",
     "t": "Effect"
    },
@@ -3048,7 +3058,7 @@
     "t": "Normal Spell"
    },
    {
-    "q": 2,
+    "q": 1,
     "n": "Radiant Typhoon Manifestation",
     "t": "Quick-Play Spell"
    },
