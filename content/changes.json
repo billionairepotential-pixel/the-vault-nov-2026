@@ -3,10 +3,10 @@
   "to": "November 2026",
   "fromUrl": "https://billionairepotential-pixel.github.io/the-vault/",
   "assessment": [
-    "November was an interaction pass, not a rebuild. Every one of the 20 decks changed, but most swaps trade greedy cards (Pot of Desires and Prosperity, Card Scanner, Upstart Goblin) and Ghost Belle for hand traps and board breakers. Only Synchron, Runick, Lunalight and Gren Maju changed how they actually play.",
-    "The result is a collection that is much better at going second without getting any less consistent. The top five didn't move. The gains landed mid-table: Primite Blue-Eyes climbed four places, Blackwing Angelechy three, and Runick Typhoon and White Forest two."
+    "November was an interaction pass, not a rebuild. Every one of the 20 decks changed, but most swaps trade greedy cards (Pot of Desires and Prosperity, Card Scanner, Upstart Goblin) and Ghost Belle for hand traps and board breakers. Only Synchron, Runick, Lunalight, Gren Maju and Ryu-Ge Mitsurugi changed how they actually play; the last four were reworked again on November 15.",
+    "The result is a collection that is much better at going second without getting any less consistent. The top five didn't move. The gains landed mid-table: Primite Blue-Eyes and Gren Maju climbed four places, Blackwing Angelechy three, and White Forest two."
   ],
-  "watch": "Still the soft spots: Ryu-Ge Mitsurugi and Lunalight have the fewest interaction pieces (9 each), and Dinomorphia, Ryu-Ge and Lunalight are only 15% to see a breaker going second.",
+  "watch": "Still the soft spots: Lunalight has the fewest interaction pieces (8) and Ryu-Ge Mitsurugi the next fewest (10), and Dinomorphia, Ryu-Ge and Lunalight are only 15% to see a breaker going second.",
   "decks": [
     {
       "slug": "white-forest",
@@ -206,28 +206,104 @@
     },
     {
       "slug": "ryu-ge-mitsurugi",
-      "summary": "Pot of Prosperity, a Mitsurugi Ritual and a Hakva become two Infinite Impermanence and Mitsurugi Great Purification. Still the thinnest interaction in the collection, but less so.",
+      "summary": "Rebuilt on November 15. Ringowurm and all seven Synchros go, along with Pre-Preparation of Rites, Mitsurugi Mirror, Droll, a Hakva and a Mitsurugi Ritual. Two more Saji, a third Melody, three Infinite Impermanence and two Mitsurugi Magatama come in, and the Extra Deck is now Rank 10–12 Xyz Monsters and Links.",
       "in": [
         [
           "Infinite Impermanence",
+          3
+        ],
+        [
+          "Mitsurugi no Mikoto, Saji",
           2
         ],
         [
-          "Mitsurugi Great Purification",
+          "Mitsurugi Magatama",
+          2
+        ],
+        [
+          "The Melody of Awakening Dragon",
+          1
+        ],
+        [
+          "Skypalace Gangaridai",
+          1
+        ],
+        [
+          "Superdreadnought Rail Cannon Juggernaut Liebe",
+          1
+        ],
+        [
+          "Divine Arsenal AA-ZEUS - Sky Thunder",
+          1
+        ],
+        [
+          "Knightmare Phoenix",
+          1
+        ],
+        [
+          "Knightmare Unicorn",
+          1
+        ],
+        [
+          "Accesscode Talker",
+          1
+        ],
+        [
+          "Dyna Mondo",
           1
         ]
       ],
       "out": [
         [
+          "Pre-Preparation of Rites",
+          3
+        ],
+        [
+          "Ringowurm, the Dragon Guarding the Hundred Apples",
+          1
+        ],
+        [
+          "Droll & Lock Bird",
+          1
+        ],
+        [
           "Genro Ryu-Ge Hakva",
           1
         ],
         [
-          "Pot of Prosperity",
+          "Mitsurugi Ritual",
           1
         ],
         [
-          "Mitsurugi Ritual",
+          "Mitsurugi Mirror",
+          1
+        ],
+        [
+          "Cosmic Blazar Dragon",
+          1
+        ],
+        [
+          "Crimson Dragon",
+          1
+        ],
+        [
+          "Snake-Eyes Vengeance Dragon",
+          1
+        ],
+        [
+          "Chaos Archfiend",
+          1
+        ],
+        [
+          "Chaos Angel",
+          1
+        ],
+        [
+          "Swordsoul Supreme Sovereign - Chengying",
+          1
+        ],
+        [
+          "Ruddy Rose Dragon",
           1
         ]
       ],
@@ -510,11 +586,15 @@
     },
     {
       "slug": "synchron",
-      "summary": "The largest rebuild: the whole Adventurer package and Ghost Belle are cut for three Junk Converter, a third Junk Synchron, more hand traps and Nibiru. Starving Venom becomes Satellite Warrior. Renamed Synchron Stardust.",
+      "summary": "The largest rebuild: the whole Adventurer package and Ghost Belle are cut for three Junk Converter, a third Junk Synchron, more hand traps and Nibiru. Starving Venom becomes Satellite Warrior. On November 15, two Synchro Emergency and Droll make room for two Forbidden Droplet and Crossroad Sonic Chick. Renamed Synchron Stardust.",
       "in": [
         [
           "Junk Converter",
           3
+        ],
+        [
+          "Forbidden Droplet",
+          2
         ],
         [
           "Junk Synchron",
@@ -537,6 +617,10 @@
           1
         ],
         [
+          "Crossroad Sonic Chick",
+          1
+        ],
+        [
           "Satellite Warrior",
           1
         ]
@@ -547,19 +631,27 @@
           3
         ],
         [
+          "Synchro Emergency",
+          2
+        ],
+        [
           "Rite of Aramesir",
           2
+        ],
+        [
+          "Droll & Lock Bird",
+          1
         ],
         [
           "Ghost Belle & Haunted Mansion",
           1
         ],
         [
-          "Wandering Gryphon Rider",
+          "Fateful Adventure",
           1
         ],
         [
-          "Fateful Adventure",
+          "Wandering Gryphon Rider",
           1
         ],
         [
@@ -822,22 +914,34 @@
     },
     {
       "slug": "lunalight",
-      "summary": "Two Foolish Burial Goods and Lunalight Serenade Dance add a new way to start (Goods sends Serenade Dance, which Summons a Lunalight from the Deck). Fuwalos, Ghost Belle, an Ash and some engine copies make room, with a second Heavy Polymerization and two Veiler.",
+      "summary": "Rebuilt to full engine ratios on November 15. Fuwalos, Ghost Belle, Droll, a Yellow Marten and a Black Sheep make way for two more Heavy Polymerization and extra Masquerade, Tenki and Scarlet Tiger: 15 one-card starters. Cat and Panther Dancer become a third Leo and Liger Dancer, so Liger now comes through Kaleido Chick or Heavy Polymerization.",
       "in": [
         [
-          "Effect Veiler",
-          2
-        ],
-        [
-          "Foolish Burial Goods",
-          2
-        ],
-        [
           "Heavy Polymerization",
+          2
+        ],
+        [
+          "Lunalight Masquerade",
           1
         ],
         [
-          "Lunalight Serenade Dance",
+          "Fire Formation - Tenki",
+          1
+        ],
+        [
+          "Lunalight Scarlet Tiger",
+          1
+        ],
+        [
+          "Effect Veiler",
+          1
+        ],
+        [
+          "Lunalight Leo Dancer",
+          1
+        ],
+        [
+          "Lunalight Liger Dancer",
           1
         ]
       ],
@@ -851,15 +955,23 @@
           1
         ],
         [
-          "Tri-Brigade Fraktall",
+          "Lunalight Black Sheep",
           1
         ],
         [
-          "Ash Blossom & Joyous Spring",
+          "Droll & Lock Bird",
           1
         ],
         [
           "Ghost Belle & Haunted Mansion",
+          1
+        ],
+        [
+          "Lunalight Cat Dancer",
+          1
+        ],
+        [
+          "Lunalight Panther Dancer",
           1
         ]
       ],
@@ -914,10 +1026,14 @@
     },
     {
       "slug": "gren-maju",
-      "summary": "The monster hand traps its own Inspector Boarder switched off are gone. In come Dimensional Fissure ×2, Solemn Strike, a second Evenly Matched and two more Infinite Impermanence, all of which work under Boarder.",
+      "summary": "Everything its own floodgates switched off is gone: the monster hand traps, and on November 15 Clockwork Night, Decisive Battle of Golgonda and Fallen of Albaz. Three Dimensional Fissure, two Lightning Storm, two Solemn Strike and more Evenly Matched and Infinite Impermanence take it from 7 going-second breakers to 10.",
       "in": [
         [
           "Dimensional Fissure",
+          3
+        ],
+        [
+          "Evenly Matched",
           2
         ],
         [
@@ -925,18 +1041,34 @@
           2
         ],
         [
-          "Evenly Matched",
-          1
+          "Solemn Strike",
+          2
         ],
         [
-          "Solemn Strike",
+          "Lightning Storm",
+          2
+        ],
+        [
+          "Favorite HERO Flame Wingman",
           1
         ]
       ],
       "out": [
         [
+          "Clockwork Night",
+          3
+        ],
+        [
           "Effect Veiler",
           2
+        ],
+        [
+          "Decisive Battle of Golgonda",
+          2
+        ],
+        [
+          "Fallen of Albaz",
+          1
         ],
         [
           "Ghost Ogre & Snow Rabbit",
@@ -951,7 +1083,7 @@
           1
         ],
         [
-          "Clockwork Night",
+          "Brigrand the Glory Dragon",
           1
         ]
       ],

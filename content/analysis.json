@@ -22,10 +22,10 @@
     "primite-blue-eyes",
     "horus-mitsurugi",
     "earthbound-resonator",
+    "gren-maju",
     "runick-typhoon",
     "ignister",
     "swordsoul-tenyi",
-    "gren-maju",
     "metalmorph-fiendsmith",
     "ryu-ge-mitsurugi",
     "synchron",
@@ -642,7 +642,7 @@
       "meta": 4.5,
       "diff": 7,
       "overall": 6.75,
-      "rank": 14,
+      "rank": 15,
       "tier": "C",
       "verdict": "A fast Cyberse Link combo with many one-card starters and a strong hand-trap suite.",
       "edge": "18 starters (96.0%) and 13 interaction pieces, plus Ra Sphere Mode as an unusual going-second breaker.",
@@ -759,7 +759,7 @@
       "meta": 4.0,
       "diff": 6,
       "overall": 6.69,
-      "rank": 15,
+      "rank": 16,
       "tier": "C",
       "verdict": "A grinding control deck with deep interaction (tied for third-most) and the fewest true starters in the collection.",
       "edge": "Floor 8.0, with 17 interaction pieces and 2 Evenly Matched. It wins long games.",
@@ -874,7 +874,7 @@
       "meta": 5.0,
       "diff": 8,
       "overall": 6.83,
-      "rank": 13,
+      "rank": 14,
       "tier": "B",
       "verdict": "A floodgate control deck that wins by milling. It never bricks, and it now carries real board breakers.",
       "edge": "0% brick rate, and Inspector Boarder plus Dimensional Fissure lock out decks that use the Extra Deck or GY heavily.",
@@ -990,19 +990,19 @@
     "gren-maju": {
       "cons": 7.0,
       "ceil": 9.0,
-      "floor": 5.0,
+      "floor": 5.5,
       "g1": 8.5,
-      "g2": 5.5,
+      "g2": 6.5,
       "res": 5.5,
-      "int": 7.0,
+      "int": 7.5,
       "meta": 5.0,
       "diff": 9,
-      "overall": 6.61,
-      "rank": 16,
-      "tier": "C",
-      "verdict": "A layered floodgate lock with a scaling beater. It's devastating when it locks and helpless when it doesn't.",
-      "edge": "Ceiling 9.0: Macro Cosmos, Necrovalley and Boarder together lock out GY decks almost completely.",
-      "risk": "The lowest floor here (5.0). Its floodgates still switch off some of its own cards, and it's weak going second.",
+      "overall": 6.85,
+      "rank": 13,
+      "tier": "B",
+      "verdict": "A layered floodgate lock with a scaling beater. It's devastating when it locks, and it now has a real plan going second.",
+      "edge": "Ceiling 9.0: Macro Cosmos, Necrovalley and Boarder together lock out GY decks almost completely, and ten breakers clear the way going second.",
+      "risk": "Its floodgates still restrict its own cards, Lightning Storm is dead once they are up, and Spell/Trap removal undoes the lock.",
       "nat": [
         "Unlikely to top cut",
         "Floodgate decks get sided against, and the current top decks have answers."
@@ -1028,10 +1028,7 @@
         ],
         "pieces": [
           "Gren Maju Da Eiza",
-          "Gizmek Orochi, the Serpentron Sky Slasher",
-          "Clockwork Night",
-          "Decisive Battle of Golgonda",
-          "Fallen of Albaz"
+          "Gizmek Orochi, the Serpentron Sky Slasher"
         ],
         "interaction": [
           "Nibiru, the Primal Being",
@@ -1040,27 +1037,28 @@
           "Evenly Matched",
           "Infinite Impermanence",
           "Solemn Judgment",
-          "Solemn Strike"
+          "Solemn Strike",
+          "Lightning Storm"
         ],
-        "breakerCount": 7
+        "breakerCount": 10
       }
     },
     "ryu-ge-mitsurugi": {
-      "cons": 5.5,
+      "cons": 6.0,
       "ceil": 8.5,
       "floor": 5.5,
       "g1": 7.5,
-      "g2": 6.0,
+      "g2": 6.5,
       "res": 7.0,
-      "int": 5.5,
+      "int": 6.0,
       "meta": 5.0,
       "diff": 8,
-      "overall": 6.3,
+      "overall": 6.5,
       "rank": 18,
       "tier": "C",
-      "verdict": "A Level 10 Pendulum control deck plus a Mitsurugi Ritual engine. It has a high ceiling but few true starters.",
-      "edge": "Ceiling 8.5, and two independent engines reach a wide Rank 10–12 toolbox.",
-      "risk": "Only 8 starters (69.4%) and 9 interaction pieces, tied for the fewest in the collection (80.8% to see one in 6 cards).",
+      "verdict": "A Level 10 Pendulum control deck plus a Mitsurugi Ritual engine, now closing with Xyz and Link Monsters instead of Synchros. High ceiling, few true starters.",
+      "edge": "Ceiling 8.5. Mistva is now a one-card start, and Mitsurugi Magatama adds removal on the opponent's turn.",
+      "risk": "Only 8 one-card starters (69.4%), the Mitsurugi half needs two cards, and War Zone locks out the whole Extra Deck that turn.",
       "nat": [
         "Unlikely to top cut",
         "A Mitsurugi deck reached the top cut at YCS Columbus in May, but this hybrid lacks the interaction for a long event."
@@ -1077,7 +1075,7 @@
         "starters": [
           "Ryu-Ge Rising",
           "The Melody of Awakening Dragon",
-          "Pre-Preparation of Rites"
+          "Sosei Ryu-Ge Mistva"
         ],
         "pieces": [
           "Tensei Ryu-Ge Anva",
@@ -1092,18 +1090,17 @@
           "Futsu no Mitama no Mitsurugi",
           "Mitsurugi Ritual",
           "Mitsurugi Prayers",
-          "Mitsurugi Mirror",
           "Mitsurugi no Mikoto, Aramasa",
           "Mitsurugi no Mikoto, Saji",
-          "Mitsurugi no Mikoto, Kusanagi"
+          "Mitsurugi no Mikoto, Kusanagi",
+          "Pot of Prosperity"
         ],
         "interaction": [
           "Bystial Magnamhut",
           "Ash Blossom & Joyous Spring",
-          "Droll & Lock Bird",
           "Nibiru, the Primal Being",
           "Infinite Impermanence",
-          "Mitsurugi Great Purification"
+          "Mitsurugi Magatama"
         ],
         "breakerCount": 1
       }
@@ -1113,17 +1110,17 @@
       "ceil": 7.0,
       "floor": 6.0,
       "g1": 6.5,
-      "g2": 6.0,
+      "g2": 6.5,
       "res": 6.0,
-      "int": 7.5,
+      "int": 8.0,
       "meta": 3.5,
       "diff": 7,
-      "overall": 6.28,
+      "overall": 6.39,
       "rank": 19,
       "tier": "C",
       "verdict": "A Synchron toolbox. It's flexible and consistent, but its ceiling is low and many of its effects lock it into Synchros.",
-      "edge": "15 starters plus three Junk Converter that turn any Tuner into Junk Synchron. It almost always does something.",
-      "risk": "Synchro-only locks still clash with Super Polymerization, and Junk Converter needs a second card (a Tuner) to start.",
+      "edge": "15 starters plus three Junk Converter that turn any Tuner into Junk Synchron, and now five going-second breakers with two Forbidden Droplet.",
+      "risk": "Junk Converter needs a second card (a Tuner) to start, and the Synchro-only locks still keep Super Polymerization for another turn.",
       "nat": [
         "Unlikely to top cut",
         "Its end boards are too small for current Tier 1 decks."
@@ -1152,39 +1149,40 @@
           "Scrap Synchron",
           "Junk Meister",
           "Synchro Emergency",
-          "Junk Converter"
+          "Junk Converter",
+          "Crossroad Sonic Chick"
         ],
         "interaction": [
           "Ash Blossom & Joyous Spring",
-          "Droll & Lock Bird",
           "Effect Veiler",
           "Super Polymerization",
           "Infinite Impermanence",
           "Ghost Ogre & Snow Rabbit",
-          "Nibiru, the Primal Being"
+          "Nibiru, the Primal Being",
+          "Forbidden Droplet"
         ],
-        "breakerCount": 3
+        "breakerCount": 5
       }
     },
     "lunalight": {
-      "cons": 6.5,
+      "cons": 7.5,
       "ceil": 7.5,
-      "floor": 6.0,
-      "g1": 6.5,
+      "floor": 6.5,
+      "g1": 7.0,
       "g2": 6.0,
-      "res": 5.5,
-      "int": 6.5,
+      "res": 6.0,
+      "int": 6.0,
       "meta": 3.5,
       "diff": 7,
-      "overall": 6.03,
+      "overall": 6.35,
       "rank": 20,
       "tier": "C",
-      "verdict": "The Lunalight Fusion chain from Cat Dancer to Liger Dancer, with a deep hand-trap suite. Its combo is the least consistent in the collection.",
-      "edge": "Liger and Leo Dancer clear boards, and Foolish Burial Goods into Serenade Dance adds a new way to start the combo.",
-      "risk": "The named-material Dancer chain is the hardest combo here to assemble, and with Fuwalos cut its going-second plan rests on one Nibiru.",
+      "verdict": "The Lunalight Fusion engine at full ratios, going straight to Liger Dancer through Kaleido Chick. Consistent now, but light on interaction.",
+      "edge": "15 one-card starters (92% to open one), and up to three Liger Dancers that wipe every Special Summoned monster.",
+      "risk": "Only 8 interaction pieces and one breaker (Nibiru), and Leo Dancer can no longer be Summoned, so everything rests on Kaleido Chick or Heavy Polymerization.",
       "nat": [
         "Unlikely to top cut",
-        "Not a current national-level deck, and its combo is too fragile."
+        "Not a current national-level deck, and it has too little interaction for a long event."
       ],
       "reg": [
         "Top 64 possible",
@@ -1192,36 +1190,33 @@
       ],
       "loc": [
         "Can win",
-        "Fun, and capable of big swing turns."
+        "Fun, consistent, and capable of big swing turns."
       ],
       "roles": {
         "starters": [
           "Lunalight Gold Leo",
-          "Lunalight Black Sheep",
           "Fire Formation - Tenki",
+          "Tri-Brigade Fraktall",
+          "Lunalight Masquerade",
           "Lunalight Kaleido Chick",
-          "Foolish Burial Goods"
+          "Foolish Burial"
         ],
         "pieces": [
           "Lunalight Yellow Marten",
           "Lunalight Emerald Bird",
           "Lunalight Silver Hound",
+          "Lunalight Black Sheep",
           "Lunalight Wolf",
           "Lunalight Tiger",
-          "Tri-Brigade Fraktall",
           "Lunalight Scarlet Tiger",
           "Luna Light Perfume",
-          "Lunalight Masquerade",
           "Lunalight Fusion",
-          "Foolish Burial",
           "Polymerization",
-          "Heavy Polymerization",
-          "Lunalight Serenade Dance"
+          "Heavy Polymerization"
         ],
         "interaction": [
           "Ash Blossom & Joyous Spring",
           "Nibiru, the Primal Being",
-          "Droll & Lock Bird",
           "Infinite Impermanence",
           "Effect Veiler"
         ],
@@ -1229,5 +1224,5 @@
       }
     }
   },
-  "asOf": "2026-11-14"
+  "asOf": "2026-11-16"
 }

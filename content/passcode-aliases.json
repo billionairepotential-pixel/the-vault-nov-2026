@@ -66,5 +66,25 @@
   "67886895": {
     "name": "Deep-Eyes White Dragon, the Blue Abyss",
     "type": "Effect"
+  },
+  "76725398": {
+    "name": "Mitsurugi Magatama",
+    "type": "Quick-Play Spell"
+  },
+  "3814632": {
+    "name": "Skypalace Gangaridai",
+    "type": "Xyz"
+  },
+  "26096328": {
+    "name": "Superdreadnought Rail Cannon Juggernaut Liebe",
+    "type": "Xyz"
+  },
+  "73898890": {
+    "name": "Dyna Mondo",
+    "type": "Link"
+  },
+  "80054655": {
+    "name": "Crossroad Sonic Chick",
+    "type": "Effect"
   }
 }

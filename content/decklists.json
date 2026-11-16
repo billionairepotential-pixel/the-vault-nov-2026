@@ -746,19 +746,9 @@
     "t": "Effect"
    },
    {
-    "q": 1,
-    "n": "Ringowurm, the Dragon Guarding the Hundred Apples",
-    "t": "Tuner"
-   },
-   {
     "q": 3,
     "n": "Ash Blossom & Joyous Spring",
     "t": "Tuner"
-   },
-   {
-    "q": 1,
-    "n": "Droll & Lock Bird",
-    "t": "Effect"
    },
    {
     "q": 1,
@@ -801,7 +791,7 @@
     "t": "Effect"
    },
    {
-    "q": 1,
+    "q": 3,
     "n": "Mitsurugi no Mikoto, Saji",
     "t": "Effect"
    },
@@ -813,7 +803,7 @@
   ],
   "spells": [
    {
-    "q": 2,
+    "q": 3,
     "n": "The Melody of Awakening Dragon",
     "t": "Normal Spell"
    },
@@ -854,43 +844,23 @@
    },
    {
     "q": 1,
-    "n": "Mitsurugi Mirror",
-    "t": "Ritual Spell"
+    "n": "Pot of Prosperity",
+    "t": "Normal Spell"
    },
    {
-    "q": 3,
-    "n": "Pre-Preparation of Rites",
-    "t": "Normal Spell"
+    "q": 2,
+    "n": "Mitsurugi Magatama",
+    "t": "Quick-Play Spell"
    }
   ],
   "traps": [
    {
-    "q": 2,
+    "q": 3,
     "n": "Infinite Impermanence",
-    "t": "Normal Trap"
-   },
-   {
-    "q": 1,
-    "n": "Mitsurugi Great Purification",
     "t": "Normal Trap"
    }
   ],
   "extra": [
-   {
-    "q": 1,
-    "n": "Cosmic Blazar Dragon",
-    "t": "Synchro"
-   },
-   {
-    "q": 1,
-    "n": "Crimson Dragon",
-    "t": "Synchro"
-   },
-   {
-    "q": 1,
-    "n": "Snake-Eyes Vengeance Dragon",
-    "t": "Synchro"
-   },
    {
     "q": 1,
     "n": "Superdreadnought Rail Cannon Gustav Max",
@@ -933,23 +903,38 @@
    },
    {
     "q": 1,
-    "n": "Chaos Archfiend",
-    "t": "Synchro"
+    "n": "Skypalace Gangaridai",
+    "t": "Xyz"
    },
    {
     "q": 1,
-    "n": "Chaos Angel",
-    "t": "Synchro"
+    "n": "Superdreadnought Rail Cannon Juggernaut Liebe",
+    "t": "Xyz"
    },
    {
     "q": 1,
-    "n": "Swordsoul Supreme Sovereign - Chengying",
-    "t": "Synchro"
+    "n": "Divine Arsenal AA-ZEUS - Sky Thunder",
+    "t": "Xyz"
    },
    {
     "q": 1,
-    "n": "Ruddy Rose Dragon",
-    "t": "Synchro"
+    "n": "Knightmare Phoenix",
+    "t": "Link"
+   },
+   {
+    "q": 1,
+    "n": "Knightmare Unicorn",
+    "t": "Link"
+   },
+   {
+    "q": 1,
+    "n": "Accesscode Talker",
+    "t": "Link"
+   },
+   {
+    "q": 1,
+    "n": "Dyna Mondo",
+    "t": "Link"
    }
   ]
  },
@@ -1907,11 +1892,6 @@
    },
    {
     "q": 1,
-    "n": "Droll & Lock Bird",
-    "t": "Effect"
-   },
-   {
-    "q": 1,
     "n": "Junk Meister",
     "t": "Effect"
    },
@@ -1934,6 +1914,11 @@
     "q": 1,
     "n": "Ghost Ogre & Snow Rabbit",
     "t": "Tuner"
+   },
+   {
+    "q": 1,
+    "n": "Crossroad Sonic Chick",
+    "t": "Effect"
    }
   ],
   "spells": [
@@ -1956,11 +1941,16 @@
     "q": 1,
     "n": "Reinforcement of the Army",
     "t": "Normal Spell"
+   },
+   {
+    "q": 2,
+    "n": "Forbidden Droplet",
+    "t": "Quick-Play Spell"
    }
   ],
   "traps": [
    {
-    "q": 3,
+    "q": 1,
     "n": "Synchro Emergency",
     "t": "Normal Trap"
    },
@@ -3160,7 +3150,7 @@
     "t": "Effect"
    },
    {
-    "q": 3,
+    "q": 2,
     "n": "Lunalight Black Sheep",
     "t": "Effect"
    },
@@ -3175,17 +3165,17 @@
     "t": "Pendulum Effect"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Tri-Brigade Fraktall",
     "t": "Effect"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Ash Blossom & Joyous Spring",
     "t": "Tuner"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Lunalight Scarlet Tiger",
     "t": "Effect"
    },
@@ -3196,11 +3186,6 @@
    },
    {
     "q": 1,
-    "n": "Droll & Lock Bird",
-    "t": "Effect"
-   },
-   {
-    "q": 2,
     "n": "Effect Veiler",
     "t": "Tuner"
    }
@@ -3212,7 +3197,7 @@
     "t": "Normal Spell"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Lunalight Masquerade",
     "t": "Continuous Spell"
    },
@@ -3222,7 +3207,7 @@
     "t": "Normal Spell"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Fire Formation - Tenki",
     "t": "Continuous Spell"
    },
@@ -3237,13 +3222,8 @@
     "t": "Normal Spell"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Heavy Polymerization",
-    "t": "Normal Spell"
-   },
-   {
-    "q": 2,
-    "n": "Foolish Burial Goods",
     "t": "Normal Spell"
    }
   ],
@@ -3252,11 +3232,6 @@
     "q": 3,
     "n": "Infinite Impermanence",
     "t": "Normal Trap"
-   },
-   {
-    "q": 1,
-    "n": "Lunalight Serenade Dance",
-    "t": "Continuous Trap"
    }
   ],
   "extra": [
@@ -3266,7 +3241,7 @@
     "t": "Fusion"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Lunalight Leo Dancer",
     "t": "Fusion"
    },
@@ -3276,18 +3251,8 @@
     "t": "Fusion"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Lunalight Liger Dancer",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
-    "n": "Lunalight Cat Dancer",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
-    "n": "Lunalight Panther Dancer",
     "t": "Fusion"
    },
    {
@@ -3523,11 +3488,6 @@
     "q": 3,
     "n": "Inspector Boarder",
     "t": "Effect"
-   },
-   {
-    "q": 1,
-    "n": "Fallen of Albaz",
-    "t": "Effect"
    }
   ],
   "spells": [
@@ -3562,29 +3522,24 @@
     "t": "Quick-Play Spell"
    },
    {
-    "q": 2,
-    "n": "Decisive Battle of Golgonda",
-    "t": "Continuous Spell"
-   },
-   {
-    "q": 2,
-    "n": "Clockwork Night",
-    "t": "Continuous Spell"
-   },
-   {
     "q": 3,
     "n": "Necrovalley",
     "t": "Field Spell"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Dimensional Fissure",
     "t": "Continuous Spell"
+   },
+   {
+    "q": 2,
+    "n": "Lightning Storm",
+    "t": "Normal Spell"
    }
   ],
   "traps": [
    {
-    "q": 2,
+    "q": 3,
     "n": "Evenly Matched",
     "t": "Normal Trap"
    },
@@ -3604,7 +3559,7 @@
     "t": "Counter Trap"
    },
    {
-    "q": 1,
+    "q": 2,
     "n": "Solemn Strike",
     "t": "Counter Trap"
    }
@@ -3633,11 +3588,6 @@
    {
     "q": 2,
     "n": "Mirrorjade the Iceblade Dragon",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
-    "n": "Brigrand the Glory Dragon",
     "t": "Fusion"
    },
    {
@@ -3679,6 +3629,11 @@
     "q": 1,
     "n": "Knightmare Unicorn",
     "t": "Link"
+   },
+   {
+    "q": 1,
+    "n": "Favorite HERO Flame Wingman",
+    "t": "Fusion"
    }
   ]
  }
