@@ -1057,7 +1057,7 @@
       "rank": 18,
       "tier": "C",
       "verdict": "A Level 10 Pendulum control deck plus a Mitsurugi Ritual engine, now closing with Xyz and Link Monsters instead of Synchros. High ceiling, few true starters.",
-      "edge": "Ceiling 8.5. Mistva is now a one-card start, and Mitsurugi Magatama adds removal on the opponent's turn.",
+      "edge": "Ceiling 8.5. Mistva is now a one-card start, and Mitsurugi Magatama adds removal that can be Set for the opponent's turn.",
       "risk": "Only 8 one-card starters (69.4%), the Mitsurugi half needs two cards, and War Zone locks out the whole Extra Deck that turn.",
       "nat": [
         "Unlikely to top cut",
@@ -1179,7 +1179,7 @@
       "tier": "C",
       "verdict": "The Lunalight Fusion engine at full ratios, going straight to Liger Dancer through Kaleido Chick. Consistent now, but light on interaction.",
       "edge": "15 one-card starters (92% to open one), and up to three Liger Dancers that wipe every Special Summoned monster.",
-      "risk": "Only 8 interaction pieces and one breaker (Nibiru), and Leo Dancer can no longer be Summoned, so everything rests on Kaleido Chick or Heavy Polymerization.",
+      "risk": "Only 8 interaction pieces and one breaker (Nibiru), and Leo Dancer can no longer be Summoned, so Liger Dancer depends on Kaleido Chick, Heavy Polymerization or Lunalight Fusion.",
       "nat": [
         "Unlikely to top cut",
         "Not a current national-level deck, and it has too little interaction for a long event."
@@ -1224,5 +1224,5 @@
       }
     }
   },
-  "asOf": "2026-11-16"
+  "asOf": "2026-11-17"
 }

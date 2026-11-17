@@ -1232,7 +1232,8 @@ function asset(path){
 
   (function renderAnalysis(){
     var A = ANALYSIS, mount = document.getElementById("analysisMount");
-    document.getElementById("anAsOf").textContent = "Decklists as of 2026-11-11 · format data as of " + A.asOf;
+    var listsAsOf = A.rank.reduce(function(m, s){ var u = DECK_INDEX[s].deck.updated || ""; return u > m ? u : m; }, "");
+    document.getElementById("anAsOf").textContent = "Decklists as of " + listsAsOf + " · format data as of " + A.asOf;
 
     /* home teaser: top five */
     var tl = document.getElementById("teaserList");
@@ -1357,6 +1358,7 @@ function asset(path){
     var avgBrick = A.rank.reduce(function(n, s){ return n + A.decks[s].odds.brick5; }, 0) / A.rank.length;
     var avgStart = A.rank.reduce(function(n, s){ return n + A.decks[s].odds.starter5; }, 0) / A.rank.length;
     var noBreak = A.rank.filter(function(s){ return A.decks[s].odds.B === 0; });
+    var oneBreak = A.rank.filter(function(s){ return A.decks[s].odds.B === 1; });
     var colAvg = COLLECTIONS.map(function(c){
       var v = c.decks.reduce(function(n, d){ return n + A.decks[d.slug].overall; }, 0) / c.decks.length; return {c: c, v: v};
     }).sort(function(a, b){ return b.v - a.v; });
@@ -1366,8 +1368,11 @@ function asset(path){
     var INS = [
       [avgBrick.toFixed(1) + "%", "Bricking isn't the problem",
        "The average brick rate across all 20 decks is " + avgBrick.toFixed(1) + "%, and " + avgStart.toFixed(0) + "% of 5-card hands hold a one-card starter. The ranking is decided by interaction and the going-second plan, not by whether a deck can open."],
-      [String(noBreak.length), "Decks with no going-second breaker",
-       listNames(noBreak) + " have no Nibiru, Evenly Matched, Super Polymerization or similar card. Each loses ground when it loses the die roll; one or two breakers from the side deck would help the most."],
+      noBreak.length
+      ? [String(noBreak.length), "Decks with no going-second breaker",
+         listNames(noBreak) + " have no Nibiru, Evenly Matched, Super Polymerization or similar card. Each loses ground when it loses the die roll; one or two breakers from the side deck would help the most."]
+      : [String(oneBreak.length), "Decks with a single going-second breaker",
+         "Every deck now runs at least one Nibiru, Evenly Matched, Super Polymerization or similar card. " + listNames(oneBreak) + " run only one copy, a 15% chance to hold it in a 6-card hand, so they gain the most from breakers in the side deck."],
       ["10 / 32", "Angelechy is the engine to watch",
        "Angelechy won YCS Orlando on November 7 and took 10 of its 32 top-cut spots, after 9 at YCS Houston. Radiant Typhoon Angelechy (#" + A.decks["radiant-typhoon"].rank + ") and Blackwing Angelechy (#" + A.decks["blackwing-angelechy"].rank + ") share it. Radiant Typhoon Angelechy has the highest meta-fit rating in the collection."],
       [colAvg[0].v.toFixed(2), colAvg[0].c.title + " is the strongest collection",
