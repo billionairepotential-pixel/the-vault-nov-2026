@@ -786,18 +786,18 @@
     "t": "Ritual Effect"
    },
    {
-    "q": 1,
-    "n": "Mitsurugi no Mikoto, Aramasa",
-    "t": "Effect"
-   },
-   {
-    "q": 3,
+    "q": 2,
     "n": "Mitsurugi no Mikoto, Saji",
     "t": "Effect"
    },
    {
     "q": 1,
-    "n": "Mitsurugi no Mikoto, Kusanagi",
+    "n": "Dogoran, the Mad Flame Kaiju",
+    "t": "Effect"
+   },
+   {
+    "q": 1,
+    "n": "Gameciel, the Sea Turtle Kaiju",
     "t": "Effect"
    }
   ],
@@ -838,24 +838,34 @@
     "t": "Ritual Spell"
    },
    {
-    "q": 3,
+    "q": 2,
     "n": "Mitsurugi Prayers",
     "t": "Quick-Play Spell"
-   },
-   {
-    "q": 1,
-    "n": "Pot of Prosperity",
-    "t": "Normal Spell"
    },
    {
     "q": 2,
     "n": "Mitsurugi Magatama",
     "t": "Quick-Play Spell"
+   },
+   {
+    "q": 2,
+    "n": "Pre-Preparation of Rites",
+    "t": "Normal Spell"
+   },
+   {
+    "q": 1,
+    "n": "Mitsurugi Mirror",
+    "t": "Ritual Spell"
+   },
+   {
+    "q": 1,
+    "n": "Interrupted Kaiju Slumber",
+    "t": "Normal Spell"
    }
   ],
   "traps": [
    {
-    "q": 3,
+    "q": 2,
     "n": "Infinite Impermanence",
     "t": "Normal Trap"
    }
@@ -1623,11 +1633,6 @@
    },
    {
     "q": 1,
-    "n": "Icejade Gymir Aegirine",
-    "t": "Synchro"
-   },
-   {
-    "q": 1,
     "n": "Monk of the Tenyi",
     "t": "Link"
    },
@@ -1654,6 +1659,11 @@
    {
     "q": 1,
     "n": "Swordsoul Sinister Sovereign - Qixing Longyuan",
+    "t": "Synchro"
+   },
+   {
+    "q": 1,
+    "n": "Chaos Angel",
     "t": "Synchro"
    }
   ]
@@ -2046,18 +2056,13 @@
     "t": "Effect"
    },
    {
-    "q": 3,
+    "q": 2,
     "n": "Effect Veiler",
     "t": "Tuner"
    },
    {
     "q": 3,
     "n": "Ash Blossom & Joyous Spring",
-    "t": "Tuner"
-   },
-   {
-    "q": 1,
-    "n": "Ghost Belle & Haunted Mansion",
     "t": "Tuner"
    },
    {
@@ -2140,6 +2145,11 @@
    {
     "q": 3,
     "n": "A.I. Meet You",
+    "t": "Normal Spell"
+   },
+   {
+    "q": 2,
+    "n": "Dark Ruler No More",
     "t": "Normal Spell"
    }
   ],
@@ -2621,18 +2631,8 @@
     "t": "Effect"
    },
    {
-    "q": 2,
+    "q": 3,
     "n": "Metal Illusionist",
-    "t": "Effect"
-   },
-   {
-    "q": 1,
-    "n": "Black Metal Dragon",
-    "t": "Effect"
-   },
-   {
-    "q": 1,
-    "n": "Red-Eyes Darkness Metal Dragon",
     "t": "Effect"
    },
    {
@@ -2641,28 +2641,18 @@
     "t": "Effect"
    },
    {
-    "q": 1,
-    "n": "Droll & Lock Bird",
-    "t": "Effect"
-   },
-   {
     "q": 3,
     "n": "Ash Blossom & Joyous Spring",
     "t": "Tuner"
    },
    {
-    "q": 3,
-    "n": "Fiendsmith Engraver",
+    "q": 2,
+    "n": "Fallen of Albaz",
     "t": "Effect"
    },
    {
-    "q": 1,
-    "n": "Fabled Lurrie",
-    "t": "Effect"
-   },
-   {
-    "q": 1,
-    "n": "Lacrima the Crimson Tears",
+    "q": 2,
+    "n": "Aluber the Jester of Despia",
     "t": "Effect"
    }
   ],
@@ -2673,23 +2663,33 @@
     "t": "Normal Spell"
    },
    {
-    "q": 1,
-    "n": "One for One",
-    "t": "Normal Spell"
-   },
-   {
-    "q": 3,
+    "q": 2,
     "n": "Super Polymerization",
     "t": "Quick-Play Spell"
    },
    {
+    "q": 2,
+    "n": "Forbidden Droplet",
+    "t": "Quick-Play Spell"
+   },
+   {
     "q": 1,
-    "n": "Fiendsmith's Tract",
+    "n": "Branded Fusion",
     "t": "Normal Spell"
    },
    {
-    "q": 2,
-    "n": "Forbidden Droplet",
+    "q": 1,
+    "n": "Branded Opening",
+    "t": "Quick-Play Spell"
+   },
+   {
+    "q": 1,
+    "n": "Branded in High Spirits",
+    "t": "Quick-Play Spell"
+   },
+   {
+    "q": 1,
+    "n": "The Fallen & The Virtuous",
     "t": "Quick-Play Spell"
    }
   ],
@@ -2702,6 +2702,16 @@
    {
     "q": 3,
     "n": "Infinite Impermanence",
+    "t": "Normal Trap"
+   },
+   {
+    "q": 1,
+    "n": "Flame Coating Metalmorph",
+    "t": "Normal Trap"
+   },
+   {
+    "q": 1,
+    "n": "Time Engine",
     "t": "Normal Trap"
    }
   ],
@@ -2728,16 +2738,6 @@
    },
    {
     "q": 1,
-    "n": "Hieratic Seal of the Heavenly Spheres",
-    "t": "Link"
-   },
-   {
-    "q": 1,
-    "n": "Striker Dragon",
-    "t": "Link"
-   },
-   {
-    "q": 1,
     "n": "S:P Little Knight",
     "t": "Link"
    },
@@ -2758,28 +2758,33 @@
    },
    {
     "q": 1,
-    "n": "Necroquip Princess",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
-    "n": "Fiendsmith's Desirae",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
-    "n": "Fiendsmith's Sequence",
-    "t": "Link"
-   },
-   {
-    "q": 1,
-    "n": "Fiendsmith's Requiem",
-    "t": "Link"
-   },
-   {
-    "q": 1,
     "n": "Underworld Goddess of the Closed World",
     "t": "Link"
+   },
+   {
+    "q": 1,
+    "n": "Lubellion the Searing Dragon",
+    "t": "Fusion"
+   },
+   {
+    "q": 1,
+    "n": "Albion the Sanctifire Dragon",
+    "t": "Fusion"
+   },
+   {
+    "q": 2,
+    "n": "Mirrorjade the Iceblade Dragon",
+    "t": "Fusion"
+   },
+   {
+    "q": 1,
+    "n": "Masquerade the Blazing Dragon",
+    "t": "Fusion"
+   },
+   {
+    "q": 1,
+    "n": "The Dragon that Devours the Dogma",
+    "t": "Fusion"
    }
   ]
  },
@@ -3140,11 +3145,6 @@
     "t": "Effect"
    },
    {
-    "q": 1,
-    "n": "Lunalight Emerald Bird",
-    "t": "Effect"
-   },
-   {
     "q": 2,
     "n": "Lunalight Silver Hound",
     "t": "Effect"
@@ -3155,27 +3155,12 @@
     "t": "Effect"
    },
    {
-    "q": 1,
-    "n": "Lunalight Wolf",
-    "t": "Pendulum Effect"
-   },
-   {
-    "q": 1,
-    "n": "Lunalight Tiger",
-    "t": "Pendulum Effect"
-   },
-   {
-    "q": 3,
-    "n": "Tri-Brigade Fraktall",
-    "t": "Effect"
-   },
-   {
     "q": 3,
     "n": "Ash Blossom & Joyous Spring",
     "t": "Tuner"
    },
    {
-    "q": 3,
+    "q": 2,
     "n": "Lunalight Scarlet Tiger",
     "t": "Effect"
    },
@@ -3185,9 +3170,14 @@
     "t": "Effect"
    },
    {
+    "q": 2,
+    "n": "Mulcharmy Purulia",
+    "t": "Effect"
+   },
+   {
     "q": 1,
-    "n": "Effect Veiler",
-    "t": "Tuner"
+    "n": "Gameciel, the Sea Turtle Kaiju",
+    "t": "Effect"
    }
   ],
   "spells": [
@@ -3225,6 +3215,21 @@
     "q": 3,
     "n": "Heavy Polymerization",
     "t": "Normal Spell"
+   },
+   {
+    "q": 2,
+    "n": "Foolish Burial Goods",
+    "t": "Normal Spell"
+   },
+   {
+    "q": 1,
+    "n": "Forbidden Droplet",
+    "t": "Quick-Play Spell"
+   },
+   {
+    "q": 1,
+    "n": "Pot of Prosperity",
+    "t": "Normal Spell"
    }
   ],
   "traps": [
@@ -3232,6 +3237,11 @@
     "q": 3,
     "n": "Infinite Impermanence",
     "t": "Normal Trap"
+   },
+   {
+    "q": 1,
+    "n": "Lunalight Serenade Dance",
+    "t": "Continuous Trap"
    }
   ],
   "extra": [
@@ -3310,7 +3320,7 @@
     "t": "Effect"
    },
    {
-    "q": 1,
+    "q": 3,
     "n": "Effect Veiler",
     "t": "Tuner"
    },
@@ -3330,11 +3340,6 @@
     "t": "Effect"
    },
    {
-    "q": 3,
-    "n": "Ash Blossom & Joyous Spring",
-    "t": "Tuner"
-   },
-   {
     "q": 1,
     "n": "Ghost Ogre & Snow Rabbit",
     "t": "Tuner"
@@ -3343,17 +3348,17 @@
     "q": 1,
     "n": "Droll & Lock Bird",
     "t": "Effect"
+   },
+   {
+    "q": 1,
+    "n": "Ghost Mourner & Moonlit Chill",
+    "t": "Tuner"
    }
   ],
   "spells": [
    {
     "q": 3,
     "n": "Spright Starter",
-    "t": "Quick-Play Spell"
-   },
-   {
-    "q": 3,
-    "n": "Super Polymerization",
     "t": "Quick-Play Spell"
    },
    {
@@ -3380,6 +3385,16 @@
     "q": 1,
     "n": "Spright Smashers",
     "t": "Quick-Play Spell"
+   },
+   {
+    "q": 2,
+    "n": "Gordian Slicer",
+    "t": "Normal Spell"
+   },
+   {
+    "q": 1,
+    "n": "Enemy Controller",
+    "t": "Quick-Play Spell"
    }
   ],
   "traps": [
@@ -3402,32 +3417,12 @@
    },
    {
     "q": 1,
-    "n": "Garura, Wings of Resonant Life",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
-    "n": "Mudragon of the Swamp",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
-    "n": "Starving Venom Fusion Dragon",
-    "t": "Fusion"
-   },
-   {
-    "q": 1,
     "n": "S:P Little Knight",
     "t": "Link"
    },
    {
     "q": 1,
     "n": "I:P Masquerena",
-    "t": "Link"
-   },
-   {
-    "q": 1,
-    "n": "Underworld Goddess of the Closed World",
     "t": "Link"
    },
    {
@@ -3463,6 +3458,26 @@
    {
     "q": 1,
     "n": "Dharc the Dark Charmer, Gloomy",
+    "t": "Link"
+   },
+   {
+    "q": 1,
+    "n": "Number 2: Ninja Shadow Mosquito",
+    "t": "Xyz"
+   },
+   {
+    "q": 1,
+    "n": "Onibimaru Soul Sweeper",
+    "t": "Xyz"
+   },
+   {
+    "q": 1,
+    "n": "Sky Cavalry Centaurea",
+    "t": "Xyz"
+   },
+   {
+    "q": 1,
+    "n": "Black Luster Soldier - Soldier of Chaos",
     "t": "Link"
    }
   ]
@@ -3586,11 +3601,6 @@
     "t": "Fusion"
    },
    {
-    "q": 2,
-    "n": "Mirrorjade the Iceblade Dragon",
-    "t": "Fusion"
-   },
-   {
     "q": 1,
     "n": "Titaniklad the Ash Dragon",
     "t": "Fusion"
@@ -3633,6 +3643,16 @@
    {
     "q": 1,
     "n": "Favorite HERO Flame Wingman",
+    "t": "Fusion"
+   },
+   {
+    "q": 1,
+    "n": "Brigrand the Glory Dragon",
+    "t": "Fusion"
+   },
+   {
+    "q": 1,
+    "n": "Khaos Starsource Dragon",
     "t": "Fusion"
    }
   ]

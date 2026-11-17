@@ -86,5 +86,69 @@
   "80054655": {
     "name": "Crossroad Sonic Chick",
     "type": "Effect"
+  },
+  "99330325": {
+    "name": "Interrupted Kaiju Slumber",
+    "type": "Normal Spell"
+  },
+  "93332803": {
+    "name": "Dogoran, the Mad Flame Kaiju",
+    "type": "Effect"
+  },
+  "55063751": {
+    "name": "Gameciel, the Sea Turtle Kaiju",
+    "type": "Effect"
+  },
+  "54693926": {
+    "name": "Dark Ruler No More",
+    "type": "Normal Spell"
+  },
+  "91152455": {
+    "name": "Flame Coating Metalmorph",
+    "type": "Normal Trap"
+  },
+  "15216188": {
+    "name": "Time Engine",
+    "type": "Normal Trap"
+  },
+  "6855503": {
+    "name": "Masquerade the Blazing Dragon",
+    "type": "Fusion"
+  },
+  "66236707": {
+    "name": "Gordian Slicer",
+    "type": "Normal Spell"
+  },
+  "52038441": {
+    "name": "Ghost Mourner & Moonlit Chill",
+    "type": "Tuner"
+  },
+  "98045062": {
+    "name": "Enemy Controller",
+    "type": "Quick-Play Spell"
+  },
+  "32453837": {
+    "name": "Number 2: Ninja Shadow Mosquito",
+    "type": "Xyz"
+  },
+  "9486959": {
+    "name": "Onibimaru Soul Sweeper",
+    "type": "Xyz"
+  },
+  "36776089": {
+    "name": "Sky Cavalry Centaurea",
+    "type": "Xyz"
+  },
+  "49202162": {
+    "name": "Black Luster Soldier - Soldier of Chaos",
+    "type": "Link"
+  },
+  "34848821": {
+    "name": "Brigrand the Glory Dragon",
+    "type": "Fusion"
+  },
+  "72578374": {
+    "name": "Khaos Starsource Dragon",
+    "type": "Fusion"
   }
 }

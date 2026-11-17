@@ -3,10 +3,10 @@
   "to": "November 2026",
   "fromUrl": "https://billionairepotential-pixel.github.io/the-vault/",
   "assessment": [
-    "November was an interaction pass, not a rebuild. Every one of the 20 decks changed, but most swaps trade greedy cards (Pot of Desires and Prosperity, Card Scanner, Upstart Goblin) and Ghost Belle for hand traps and board breakers. Only Synchron, Runick, Lunalight, Gren Maju and Ryu-Ge Mitsurugi changed how they actually play; the last four were reworked again on November 15.",
-    "The result is a collection that is much better at going second without getting any less consistent. The top five didn't move. The gains landed mid-table: Primite Blue-Eyes and Gren Maju climbed four places, Blackwing Angelechy three, and White Forest two."
+    "November was an interaction pass, not a rebuild, for most of the collection. Every one of the 20 decks changed, but most swaps trade greedy cards (Pot of Desires and Prosperity, Card Scanner, Upstart Goblin) and Ghost Belle for hand traps and board breakers. The real rebuilds were Synchron, Runick, Gren Maju, Lunalight and Ryu-Ge Mitsurugi, and on November 17 Metalmorph, which traded its Fiendsmith engine for Branded.",
+    "The result is a collection that is much better at going second without getting any less consistent. The top four didn't move. The biggest climbs were Metalmorph (ten places, to #6), Ryu-Ge Mitsurugi (seven) and White Forest (three). Horus Mitsurugi, Earthbound Resonator and Swordsoul Tenyi each slipped five places, though all three scored about the same or better: the decks around them improved more."
   ],
-  "watch": "Still the soft spots: Lunalight has the fewest interaction pieces (8) and Ryu-Ge Mitsurugi the next fewest (10), and Dinomorphia, Ryu-Ge and Lunalight are only 15% to see a breaker going second.",
+  "watch": "Still the soft spots: Lunalight and Radiant Typhoon run the fewest interaction pieces (11), Dinomorphia is only 15% to see a breaker going second, Swordsoul Tenyi has the fewest one-card starters (6), and Spright has the highest brick rate (8.4%).",
   "decks": [
     {
       "slug": "white-forest",
@@ -206,23 +206,35 @@
     },
     {
       "slug": "ryu-ge-mitsurugi",
-      "summary": "Rebuilt on November 15. Ringowurm and all seven Synchros go, along with Pre-Preparation of Rites, Mitsurugi Mirror, Droll, a Hakva and a Mitsurugi Ritual. Two more Saji, a third Melody, three Infinite Impermanence and two Mitsurugi Magatama come in, and the Extra Deck is now Rank 10–12 Xyz Monsters and Links.",
+      "summary": "Rebuilt on November 15: the Synchros and Ringowurm are gone and the Extra Deck is Rank 10–12 Xyz Monsters and Links. On November 17 Aramasa, Kusanagi and Pot of Prosperity made way for Pre-Preparation of Rites, Mitsurugi Mirror and a Kaiju package (Interrupted Kaiju Slumber, Dogoran, Gameciel).",
       "in": [
         [
-          "Infinite Impermanence",
-          3
+          "Mitsurugi no Mikoto, Saji",
+          1
         ],
         [
-          "Mitsurugi no Mikoto, Saji",
-          2
+          "Dogoran, the Mad Flame Kaiju",
+          1
+        ],
+        [
+          "Gameciel, the Sea Turtle Kaiju",
+          1
+        ],
+        [
+          "The Melody of Awakening Dragon",
+          1
         ],
         [
           "Mitsurugi Magatama",
           2
         ],
         [
-          "The Melody of Awakening Dragon",
+          "Interrupted Kaiju Slumber",
           1
+        ],
+        [
+          "Infinite Impermanence",
+          2
         ],
         [
           "Skypalace Gangaridai",
@@ -255,18 +267,6 @@
       ],
       "out": [
         [
-          "Pre-Preparation of Rites",
-          3
-        ],
-        [
-          "Ringowurm, the Dragon Guarding the Hundred Apples",
-          1
-        ],
-        [
-          "Droll & Lock Bird",
-          1
-        ],
-        [
           "Genro Ryu-Ge Hakva",
           1
         ],
@@ -275,7 +275,31 @@
           1
         ],
         [
-          "Mitsurugi Mirror",
+          "Mitsurugi Prayers",
+          1
+        ],
+        [
+          "Pre-Preparation of Rites",
+          1
+        ],
+        [
+          "Mitsurugi no Mikoto, Aramasa",
+          1
+        ],
+        [
+          "Mitsurugi no Mikoto, Kusanagi",
+          1
+        ],
+        [
+          "Pot of Prosperity",
+          1
+        ],
+        [
+          "Ringowurm, the Dragon Guarding the Hundred Apples",
+          1
+        ],
+        [
+          "Droll & Lock Bird",
           1
         ],
         [
@@ -506,7 +530,7 @@
     },
     {
       "slug": "swordsoul-tenyi",
-      "summary": "Pot of Desires becomes Pot of Prosperity, a Suruya becomes the third Taia, and an Evenly Matched becomes a second Ghost Ogre. Knightmare Unicorn becomes Qixing Longyuan.",
+      "summary": "Pot of Desires becomes Pot of Prosperity, a Suruya becomes the third Taia, and an Evenly Matched becomes a second Ghost Ogre. In the Extra Deck, Knightmare Unicorn and Icejade Gymir Aegirine become Qixing Longyuan and Chaos Angel.",
       "in": [
         [
           "Swordsoul of Taia",
@@ -523,6 +547,10 @@
         [
           "Swordsoul Sinister Sovereign - Qixing Longyuan",
           1
+        ],
+        [
+          "Chaos Angel",
+          1
         ]
       ],
       "out": [
@@ -531,11 +559,15 @@
           1
         ],
         [
-          "Pot of Desires",
+          "Evenly Matched",
           1
         ],
         [
-          "Evenly Matched",
+          "Icejade Gymir Aegirine",
+          1
+        ],
+        [
+          "Pot of Desires",
           1
         ],
         [
@@ -674,7 +706,7 @@
     },
     {
       "slug": "ignister",
-      "summary": "One Doyon and one Ghost Belle become a second Wizard @Ignister and a third Ignister A.I.Land. Link Spider stays as the answer to an opponent's Nibiru Token.",
+      "summary": "One Doyon and one Ghost Belle became a second Wizard @Ignister and a third Ignister A.I.Land. On November 17 the other Ghost Belle and an Effect Veiler became two Dark Ruler No More, so it now has five going-second breakers.",
       "in": [
         [
           "Wizard @Ignister",
@@ -683,16 +715,24 @@
         [
           "Ignister A.I.Land",
           1
+        ],
+        [
+          "Dark Ruler No More",
+          2
         ]
       ],
       "out": [
         [
-          "Ghost Belle & Haunted Mansion",
+          "Effect Veiler",
           1
         ],
         [
           "Doyon @Ignister",
           1
+        ],
+        [
+          "Ghost Belle & Haunted Mansion",
+          2
         ]
       ],
       "oldRank": 11,
@@ -782,25 +822,133 @@
     },
     {
       "slug": "metalmorph-fiendsmith",
-      "summary": "Both Bystials, two Black Metal Dragon and Pot of Prosperity are cut for two more Infinite Impermanence, two Forbidden Droplet and a second Metal Illusionist. Interaction goes from 12 to 16.",
+      "summary": "Rebuilt on November 17. The Fiendsmith engine, Black Metal Dragon, Darkness Metal Dragon, One for One and Droll are out; a Branded engine (Fallen of Albaz, Aluber, Branded Fusion, Opening and High Spirits, The Fallen & The Virtuous) now makes the Level 8 Dragon and Fiend that Max Metalmorph Tributes. Flame Coating Metalmorph and Time Engine join the Traps.",
       "in": [
+        [
+          "Metal Illusionist",
+          2
+        ],
+        [
+          "Fallen of Albaz",
+          2
+        ],
+        [
+          "Aluber the Jester of Despia",
+          2
+        ],
         [
           "Forbidden Droplet",
           2
+        ],
+        [
+          "Branded Fusion",
+          1
+        ],
+        [
+          "Branded Opening",
+          1
+        ],
+        [
+          "Branded in High Spirits",
+          1
+        ],
+        [
+          "The Fallen & The Virtuous",
+          1
         ],
         [
           "Infinite Impermanence",
           2
         ],
         [
-          "Metal Illusionist",
+          "Flame Coating Metalmorph",
+          1
+        ],
+        [
+          "Time Engine",
+          1
+        ],
+        [
+          "Lubellion the Searing Dragon",
+          1
+        ],
+        [
+          "Albion the Sanctifire Dragon",
+          1
+        ],
+        [
+          "Mirrorjade the Iceblade Dragon",
+          2
+        ],
+        [
+          "Masquerade the Blazing Dragon",
+          1
+        ],
+        [
+          "The Dragon that Devours the Dogma",
           1
         ]
       ],
       "out": [
         [
+          "Super Polymerization",
+          1
+        ],
+        [
           "Black Metal Dragon",
-          2
+          3
+        ],
+        [
+          "Red-Eyes Darkness Metal Dragon",
+          1
+        ],
+        [
+          "Droll & Lock Bird",
+          1
+        ],
+        [
+          "Fiendsmith Engraver",
+          3
+        ],
+        [
+          "Fabled Lurrie",
+          1
+        ],
+        [
+          "Lacrima the Crimson Tears",
+          1
+        ],
+        [
+          "One for One",
+          1
+        ],
+        [
+          "Fiendsmith's Tract",
+          1
+        ],
+        [
+          "Hieratic Seal of the Heavenly Spheres",
+          1
+        ],
+        [
+          "Striker Dragon",
+          1
+        ],
+        [
+          "Necroquip Princess",
+          1
+        ],
+        [
+          "Fiendsmith's Desirae",
+          1
+        ],
+        [
+          "Fiendsmith's Sequence",
+          1
+        ],
+        [
+          "Fiendsmith's Requiem",
+          1
         ],
         [
           "Bystial Druiswurm",
@@ -914,11 +1062,15 @@
     },
     {
       "slug": "lunalight",
-      "summary": "Rebuilt to full engine ratios on November 15. Fuwalos, Ghost Belle, Droll, a Yellow Marten and a Black Sheep make way for two more Heavy Polymerization and extra Masquerade, Tenki and Scarlet Tiger: 15 one-card starters. Cat and Panther Dancer become a third Leo and Liger Dancer, so Liger now comes through Kaleido Chick or Heavy Polymerization.",
+      "summary": "Rebuilt twice. On November 15 it went to full engine ratios; on November 17 the Tri-Brigade package, Emerald Bird, Wolf and Tiger made way for Foolish Burial Goods into Serenade Dance, Pot of Prosperity, and a going-second package of Mulcharmy Purulia ×2, Gameciel and Forbidden Droplet.",
       "in": [
         [
-          "Heavy Polymerization",
+          "Mulcharmy Purulia",
           2
+        ],
+        [
+          "Gameciel, the Sea Turtle Kaiju",
+          1
         ],
         [
           "Lunalight Masquerade",
@@ -929,11 +1081,23 @@
           1
         ],
         [
-          "Lunalight Scarlet Tiger",
+          "Heavy Polymerization",
+          2
+        ],
+        [
+          "Foolish Burial Goods",
+          2
+        ],
+        [
+          "Forbidden Droplet",
           1
         ],
         [
-          "Effect Veiler",
+          "Pot of Prosperity",
+          1
+        ],
+        [
+          "Lunalight Serenade Dance",
           1
         ],
         [
@@ -947,16 +1111,32 @@
       ],
       "out": [
         [
-          "Mulcharmy Fuwalos",
-          2
-        ],
-        [
           "Lunalight Yellow Marten",
           1
         ],
         [
           "Lunalight Black Sheep",
           1
+        ],
+        [
+          "Lunalight Emerald Bird",
+          1
+        ],
+        [
+          "Lunalight Wolf",
+          1
+        ],
+        [
+          "Lunalight Tiger",
+          1
+        ],
+        [
+          "Tri-Brigade Fraktall",
+          3
+        ],
+        [
+          "Mulcharmy Fuwalos",
+          2
         ],
         [
           "Droll & Lock Bird",
@@ -990,18 +1170,74 @@
     },
     {
       "slug": "spright",
-      "summary": "Dogmatika Maximus and Punishment are cut for a second Spright Red and Spright Smashers, so the Dogmatika half is now just Ecclesia, Nadir Servant and Fleurdelis.",
+      "summary": "The Dogmatika half is now just Ecclesia, Nadir Servant and Fleurdelis. On November 17 Ash Blossom and Super Polymerization (cards not owned for this deck) were replaced by Effect Veiler, Ghost Mourner, two Gordian Slicer and Enemy Controller, and the Fusion targets became Rank 2 Xyz Monsters and Black Luster Soldier.",
       "in": [
         [
           "Spright Red",
           1
         ],
         [
+          "Effect Veiler",
+          2
+        ],
+        [
+          "Ghost Mourner & Moonlit Chill",
+          1
+        ],
+        [
           "Spright Smashers",
+          1
+        ],
+        [
+          "Gordian Slicer",
+          2
+        ],
+        [
+          "Enemy Controller",
+          1
+        ],
+        [
+          "Number 2: Ninja Shadow Mosquito",
+          1
+        ],
+        [
+          "Onibimaru Soul Sweeper",
+          1
+        ],
+        [
+          "Sky Cavalry Centaurea",
+          1
+        ],
+        [
+          "Black Luster Soldier - Soldier of Chaos",
           1
         ]
       ],
       "out": [
+        [
+          "Ash Blossom & Joyous Spring",
+          3
+        ],
+        [
+          "Super Polymerization",
+          3
+        ],
+        [
+          "Garura, Wings of Resonant Life",
+          1
+        ],
+        [
+          "Mudragon of the Swamp",
+          1
+        ],
+        [
+          "Starving Venom Fusion Dragon",
+          1
+        ],
+        [
+          "Underworld Goddess of the Closed World",
+          1
+        ],
         [
           "Dogmatika Maximus",
           1
@@ -1026,11 +1262,15 @@
     },
     {
       "slug": "gren-maju",
-      "summary": "Everything its own floodgates switched off is gone: the monster hand traps, and on November 15 Clockwork Night, Decisive Battle of Golgonda and Fallen of Albaz. Three Dimensional Fissure, two Lightning Storm, two Solemn Strike and more Evenly Matched and Infinite Impermanence take it from 7 going-second breakers to 10.",
+      "summary": "Everything its own floodgates switched off is gone: the monster hand traps, Clockwork Night, Decisive Battle of Golgonda and Fallen of Albaz. Three Dimensional Fissure, two Lightning Storm, two Solemn Strike and more Evenly Matched and Infinite Impermanence take it from 7 going-second breakers to 10. The Mirrorjades moved to Metalmorph on November 17.",
       "in": [
         [
           "Dimensional Fissure",
           3
+        ],
+        [
+          "Lightning Storm",
+          2
         ],
         [
           "Evenly Matched",
@@ -1045,15 +1285,19 @@
           2
         ],
         [
-          "Lightning Storm",
-          2
+          "Favorite HERO Flame Wingman",
+          1
         ],
         [
-          "Favorite HERO Flame Wingman",
+          "Khaos Starsource Dragon",
           1
         ]
       ],
       "out": [
+        [
+          "Mirrorjade the Iceblade Dragon",
+          2
+        ],
         [
           "Clockwork Night",
           3
@@ -1080,10 +1324,6 @@
         ],
         [
           "Ash Blossom & Joyous Spring",
-          1
-        ],
-        [
-          "Brigrand the Glory Dragon",
           1
         ]
       ],

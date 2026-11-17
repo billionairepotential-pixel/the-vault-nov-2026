@@ -68,7 +68,7 @@
           "slug": "ryu-ge-mitsurugi",
           "name": "Ryu-Ge Mitsurugi",
           "style": "Method: Pendulum",
-          "tagline": "A Level 10 Pendulum / Realm control shell fused with the Mitsurugi Ritual line, closing with a Rank 10–12 Xyz and Link toolbox.",
+          "tagline": "A Level 10 Pendulum / Realm control shell fused with the Mitsurugi Ritual line and a Kaiju package, closing with a Rank 10–12 Xyz and Link toolbox.",
           "keyCards": [
             "Ryu-Ge Rising",
             "Mitsurugi Prayers",
@@ -76,7 +76,7 @@
             "Mitsurugi Magatama",
             "Infinite Impermanence"
           ],
-          "updated": "2026-11-15"
+          "updated": "2026-11-17"
         }
       ]
     },
@@ -141,7 +141,7 @@
             "Ash Blossom & Joyous Spring",
             "Infinite Impermanence"
           ],
-          "updated": "2026-11-11"
+          "updated": "2026-11-17"
         }
       ]
     },
@@ -192,7 +192,7 @@
             "Ash Blossom & Joyous Spring",
             "Infinite Impermanence"
           ],
-          "updated": "2026-11-11"
+          "updated": "2026-11-17"
         }
       ]
     },
@@ -231,16 +231,16 @@
         },
         {
           "slug": "metalmorph-fiendsmith",
-          "name": "Metalmorph Fiendsmith",
-          "tagline": "A Max Metalmorph Trap toolbox running three boss monsters off Red-Eyes Dragons and Zoa, with the Fiendsmith LIGHT Fiend engine layered in for extension.",
+          "name": "Metalmorph",
+          "tagline": "A Max Metalmorph Trap toolbox running three boss monsters off Zoa and Red-Eyes Metal Claws, with a Branded Fusion engine that makes the Level 8 Dragon and Fiend it Tributes.",
           "keyCards": [
             "Zoa the Fiendish Beast",
             "Red-Eyes Metal Claws Dragon",
+            "Branded Fusion",
             "Infinite Impermanence",
-            "Fiendsmith Engraver",
             "Ash Blossom & Joyous Spring"
           ],
-          "updated": "2026-11-11"
+          "updated": "2026-11-17"
         }
       ]
     },
@@ -280,7 +280,7 @@
         {
           "slug": "lunalight",
           "name": "Lunalight",
-          "tagline": "The Lunalight DARK Beast-Warrior Fusion engine at full ratios, using Kaleido Chick to go straight to Liger Dancer, backed by a Tri-Brigade Fraktall and Fire Formation package.",
+          "tagline": "The Lunalight DARK Beast-Warrior Fusion engine at full ratios, using Kaleido Chick to go straight to Liger Dancer, with Fire Formation, Foolish Burial Goods into Serenade Dance, and a going-second package.",
           "keyCards": [
             "Lunalight Gold Leo",
             "Polymerization",
@@ -288,7 +288,7 @@
             "Ash Blossom & Joyous Spring",
             "Infinite Impermanence"
           ],
-          "updated": "2026-11-15"
+          "updated": "2026-11-17"
         }
       ]
     },
@@ -302,15 +302,15 @@
         {
           "slug": "spright",
           "name": "Spright Dogmatika",
-          "tagline": "The Spright Level / Rank / Link 2 engine paired with the Dogmatika Extra-Deck-send package, running one of the heaviest hand-trap suites in the collection.",
+          "tagline": "The Spright Level / Rank / Link 2 engine paired with the Dogmatika Extra-Deck-send package, running the heaviest going-second suite in the collection: Gordian Slicer, Evenly Matched and three Nibiru.",
           "keyCards": [
             "Spright Starter",
             "Spright Blue",
-            "Ash Blossom & Joyous Spring",
+            "Effect Veiler",
             "Infinite Impermanence",
-            "Effect Veiler"
+            "Evenly Matched"
           ],
-          "updated": "2026-11-11"
+          "updated": "2026-11-17"
         },
         {
           "slug": "gren-maju",
@@ -323,7 +323,7 @@
             "Macro Cosmos",
             "Solemn Judgment"
           ],
-          "updated": "2026-11-15"
+          "updated": "2026-11-17"
         }
       ]
     }
